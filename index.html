@@ -14,7 +14,7 @@
 
     <link rel="stylesheet" href="css/main.css" />
 
-    <title>jtravel tour - have memorable experience</title>
+    <title>jtravel tour - make memorable experience</title>
   </head>
   <body>
     <!-- Navbar -->
@@ -45,5 +45,204 @@
         </div>
       </div>
     </nav>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-bg bg-1"><img src="images/hero-1.jpg" alt="" /></div>
+      <div class="hero-bg bg-2"><img src="images/hero-2.jpg" alt="" /></div>
+      <div class="hero-bg bg-3"><img src="images/hero-3.jpg" alt="" /></div>
+      <div class="hero-heading">
+        <h1 class="hero-heading-main">Discover Japan</h1>
+        <h2 class="hero-heading-sub">Feel the authenticity</h2>
+        <button class="btn primary-btn">Start Now</button>
+      </div>
+    </section>
+
+    <!-- Picks -->
+    <section class="picks">
+      <div class="container">
+        <div class="picks-left">
+          <h3 class="section-title">Our Picks</h3>
+          <p class="section-paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
+            consequatur!
+          </p>
+          <div class="pick-card-wrapper">
+            <div class="pick">
+              <img src="images/pick-1.jpg" alt="Fushimi Inari Shrine" />
+              <div class="pick-info">
+                <h4 class="pick-title">Fushimi Inari Shrine</h4>
+                <button id="pick-1-btn" class="btn tertiary-btn pick-btn">
+                  Check
+                </button>
+              </div>
+            </div>
+            <div class="pick">
+              <img src="images/pick-2.jpg" alt="Shibuya, Tokyo" />
+              <div class="pick-info">
+                <h4 class="pick-title">Shibuya, Tokyo</h4>
+                <button id="pick-2-btn" class="btn tertiary-btn pick-btn">
+                  Check
+                </button>
+              </div>
+            </div>
+            <div class="pick">
+              <img src="images/pick-3.jpg" alt="Osaka" />
+              <div class="pick-info">
+                <h4 class="pick-title">Osaka</h4>
+                <button id="pick-3-btn" class="btn tertiary-btn pick-btn">
+                  Check
+                </button>
+              </div>
+            </div>
+            <div class="pick">
+              <img src="images/pick-4.jpg" alt="" />
+              <div class="pick-info">
+                <h4 class="pick-title">Furano Hokkaido</h4>
+                <button id="pick-4-btn" class="btn tertiary-btn pick-btn">
+                  Check
+                </button>
+              </div>
+            </div>
+            <div class="pick">
+              <img src="images/pick-5.jpg" alt="" />
+              <div class="pick-info">
+                <h4 class="pick-title">Cuisine</h4>
+                <button id="pick-5-btn" class="btn tertiary-btn pick-btn">
+                  Check
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="picks-right">
+          <h4 class="form-title">Check availability?</h4>
+          <form>
+            <div class="inputs-group">
+              <label for="date">check in - check out</label>
+              <input
+                type="date"
+                class="input-field"
+                placeholder="mm/dd/yy - mm/dd/yyyy"
+              />
+            </div>
+            <div class="inputs-group">
+              <label for="city">Which city is your main interest?</label>
+              <input type="text" class="input-field" placeholder="e.g) Tokyo" />
+            </div>
+            <input type="submit" value="Check" class="btn secondary-btn" />
+          </form>
+        </div>
+      </div>
+
+      <!-- modal -->
+      <div id="modal-1" class="modal">
+        <!-- modal content -->
+        <div class="modal-content">
+          <span id="modal-close-1" class="modal-close">&times;</span>
+          <div class="img-wrapper">
+            <img src="images/pick-1.jpg" alt="Fushimi Inari Shrine" />
+          </div>
+          <div class="modal-text">
+            <h4 class="modal-title">Fushimi Inari Shrine</h4>
+            <span class="tag culture">Culture</span>
+            <p class="modal-location">Kyoto</p>
+            <p class="modal-paragraph">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptas, cum?Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Ad voluptas mollitia laboriosam quisquam officia veniam
+              quod, repudiandae voluptatum soluta reiciendis.
+            </p>
+            <button class="btn primary-btn">Check detail</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="modal-2" class="modal">
+        <!-- modal content -->
+        <div class="modal-content">
+          <span id="modal-close-2" class="modal-close">&times;</span>
+          <div class="img-wrapper">
+            <img src="images/pick-2.jpg" alt="Shibuya, Tokyo" />
+          </div>
+          <div class="modal-text">
+            <h4 class="modal-title">Shibuya, Tokyo</h4>
+            <span class="tag experience">Experience</span>
+            <p class="modal-location">Tokyo</p>
+            <p class="modal-paragraph">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptas, cum?Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Ad voluptas mollitia laboriosam quisquam officia veniam
+              quod, repudiandae voluptatum soluta reiciendis.
+            </p>
+            <button class="btn primary-btn">Check detail</button>
+          </div>
+        </div>
+      </div>
+      <div id="modal-3" class="modal">
+        <!-- modal content -->
+        <div class="modal-content">
+          <span id="modal-close-3" class="modal-close">&times;</span>
+          <div class="img-wrapper">
+            <img src="images/pick-3.jpg" alt="Osaka" />
+          </div>
+          <div class="modal-text">
+            <h4 class="modal-title">Osaka</h4>
+            <span class="tag food">Food</span>
+            <p class="modal-location">Osaka</p>
+            <p class="modal-paragraph">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptas, cum?Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Ad voluptas mollitia laboriosam quisquam officia veniam
+              quod, repudiandae voluptatum soluta reiciendis.
+            </p>
+            <button class="btn primary-btn">Check detail</button>
+          </div>
+        </div>
+      </div>
+      <div id="modal-4" class="modal">
+        <!-- modal content -->
+        <div class="modal-content">
+          <span id="modal-close-4" class="modal-close">&times;</span>
+          <div class="img-wrapper">
+            <img src="images/pick-4.jpg" alt="Furano, Hokkaido" />
+          </div>
+          <div class="modal-text">
+            <h4 class="modal-title">Furano, Hokkaido</h4>
+            <span class="tag nature">Nature</span>
+            <p class="modal-location">Hokkaido</p>
+            <p class="modal-paragraph">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptas, cum?Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Ad voluptas mollitia laboriosam quisquam officia veniam
+              quod, repudiandae voluptatum soluta reiciendis.
+            </p>
+            <button class="btn primary-btn">Check detail</button>
+          </div>
+        </div>
+      </div>
+      <div id="modal-5" class="modal">
+        <!-- modal content -->
+        <div class="modal-content">
+          <span id="modal-close-5" class="modal-close">&times;</span>
+          <div class="img-wrapper">
+            <img src="images/pick-5.jpg" alt="Pouring matcha on icecream" />
+          </div>
+          <div class="modal-text">
+            <h4 class="modal-title">Cuisine</h4>
+            <span class="tag food">Culture</span>
+            <p class="modal-location">Kyoto</p>
+            <p class="modal-paragraph">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptas, cum?Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Ad voluptas mollitia laboriosam quisquam officia veniam
+              quod, repudiandae voluptatum soluta reiciendis.
+            </p>
+            <button class="btn primary-btn">Check detail</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/main.js"></script>
   </body>
 </html>

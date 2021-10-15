@@ -31,3 +31,7 @@ $font-sizes: (
 
 @mixin sectionHeadingStyles($fontSize: 50px) {
 }
+
+@function doubleSize($size) {
+  @return $size * 2;
+}

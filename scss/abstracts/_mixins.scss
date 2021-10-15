@@ -33,3 +33,19 @@ responsive
   color: $color;
   font-size: $font-size;
 }
+
+@mixin pageHeadingStyles($font-size: size(xl), $color: color(white)) {
+  font-family: $font-bodoni;
+  font-size: $font-size * 2;
+  color: $color;
+  font-weight: 300;
+  text-shadow: 0.2rem 0.2rem 0.4rem rgba(color(secondary), 0.4);
+}
+
+@mixin animation($animation) {
+  -webkit-animation: $animation;
+  -moz-animation: $animation;
+  -ms-animation: $animation;
+  -o-animation: $animation;
+  animation: $animation;
+}

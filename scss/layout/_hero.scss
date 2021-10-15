@@ -1,0 +1,81 @@
+.hero {
+  width: 100vw;
+  height: 60vh;
+  position: relative;
+
+  &-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    opacity: 0;
+    visibility: hidden;
+    // animation: slideshow 12s linear infinite;
+    @include animation(slideshow 12s linear infinite);
+  }
+
+  &-heading {
+    position: absolute;
+    bottom: 20%;
+    right: 20rem;
+
+    &-main {
+      @include pageHeadingStyles;
+    }
+
+    &-sub {
+      @include pageHeadingStyles($font-size: size(md));
+      padding-bottom: 2rem;
+    }
+  }
+}
+
+.bg-1 {
+  animation-delay: 0s;
+}
+
+.bg-2 {
+  animation-delay: 4s;
+}
+
+.bg-3 {
+  animation-delay: 8s;
+}
+
+@keyframes slideshow {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  5% {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  18% {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  20% {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  30% {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  60% {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}

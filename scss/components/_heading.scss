@@ -1,0 +1,32 @@
+.section-title {
+  font-size: size(xl);
+  letter-spacing: 0.2rem;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 0;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 0.2rem;
+    transform: translateY(-50%);
+    background-color: color(primary);
+    top: 50%;
+  }
+
+  &::before {
+    left: -60%;
+  }
+
+  &::after {
+    right: -70%;
+  }
+}
+
+.section-paragraph {
+  font-size: size(sm);
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+}
