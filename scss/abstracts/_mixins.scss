@@ -1,0 +1,35 @@
+/*
+flex layout position, text styles, centering, fullspace
+navigation
+footerlist
+responsive
+*/
+
+// @mixin navigation {
+//   &-items {
+//     list-style: none;
+//   }
+
+//   &-link {
+//     text-decoration: none;
+//     text-transform: uppercase;
+//     padding: 1rem 0;
+//   }
+// }
+
+@mixin flexPosition($justCont: center, $alignItem: center) {
+  display: flex;
+  justify-content: $justCont;
+  align-items: $alignItem;
+}
+
+@mixin linkStyles(
+  $transform: uppercase,
+  $color: color(black),
+  $font-size: size(sm)
+) {
+  text-decoration: none;
+  text-transform: $transform;
+  color: $color;
+  font-size: $font-size;
+}

@@ -1,5 +1,33 @@
 /* Color */
+$colors: (
+  primary: #8d0801,
+  secondary: #66666e,
+  tertiary: #e6e6e9,
+  black: #000000,
+  light: #f4f4f6,
+  white: #fff,
+);
 
-/* Font Family */
+@function color($color-name) {
+  @return map-get($map: $colors, $key: $color-name);
+}
 
-/* Font size var, size*/
+/* Font Family*/
+$font-bodoni: "Bodoni Moda", serif;
+$font-lato: "Lato", sans-serif;
+
+/* Font size*/
+$font-sizes: (
+  xl: 3rem,
+  lg: 2.5rem,
+  md: 2rem,
+  sm: 1.8rem,
+  xs: 1.6rem,
+);
+
+@function size($size) {
+  @return map-get($map: $font-sizes, $key: $size);
+}
+
+@mixin sectionHeadingStyles($fontSize: 50px) {
+}
