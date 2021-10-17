@@ -11,6 +11,17 @@
       href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;600;700;800&family=Lato:wght@300;400;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 
     <link rel="stylesheet" href="css/main.css" />
 
@@ -133,116 +144,377 @@
           </form>
         </div>
       </div>
+    </section>
 
-      <!-- modal -->
-      <div id="modal-1" class="modal">
-        <!-- modal content -->
-        <div class="modal-content">
-          <span id="modal-close-1" class="modal-close">&times;</span>
-          <div class="img-wrapper">
-            <img src="images/pick-1.jpg" alt="Fushimi Inari Shrine" />
-          </div>
-          <div class="modal-text">
-            <h4 class="modal-title">Fushimi Inari Shrine</h4>
-            <span class="tag culture">Culture</span>
-            <p class="modal-location">Kyoto</p>
-            <p class="modal-paragraph">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptas, cum?Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Ad voluptas mollitia laboriosam quisquam officia veniam
-              quod, repudiandae voluptatum soluta reiciendis.
-            </p>
-            <button class="btn primary-btn">Check detail</button>
-          </div>
+    <!-- Interests -->
+    <section class="interest">
+      <div class="container">
+        <div class="interest-section-text">
+          <h3 class="section-title">Search by your interest</h3>
+          <p class="section-paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
+            consequatur!
+          </p>
         </div>
-      </div>
+        <div class="swiper mySwiper">
+          <div class="interest-cards swiper-wrapper">
+            <div class="interest-card swiper-slide">
+              <div class="interest-icon">
+                <i class="fas fa-book-open fa-5x"></i>
+              </div>
+              <h5 class="interest-title">Culture</h5>
+              <button class="btn tertiary-btn">Explore</button>
+            </div>
 
-      <div id="modal-2" class="modal">
-        <!-- modal content -->
-        <div class="modal-content">
-          <span id="modal-close-2" class="modal-close">&times;</span>
-          <div class="img-wrapper">
-            <img src="images/pick-2.jpg" alt="Shibuya, Tokyo" />
-          </div>
-          <div class="modal-text">
-            <h4 class="modal-title">Shibuya, Tokyo</h4>
-            <span class="tag experience">Experience</span>
-            <p class="modal-location">Tokyo</p>
-            <p class="modal-paragraph">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptas, cum?Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Ad voluptas mollitia laboriosam quisquam officia veniam
-              quod, repudiandae voluptatum soluta reiciendis.
-            </p>
-            <button class="btn primary-btn">Check detail</button>
-          </div>
-        </div>
-      </div>
-      <div id="modal-3" class="modal">
-        <!-- modal content -->
-        <div class="modal-content">
-          <span id="modal-close-3" class="modal-close">&times;</span>
-          <div class="img-wrapper">
-            <img src="images/pick-3.jpg" alt="Osaka" />
-          </div>
-          <div class="modal-text">
-            <h4 class="modal-title">Osaka</h4>
-            <span class="tag food">Food</span>
-            <p class="modal-location">Osaka</p>
-            <p class="modal-paragraph">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptas, cum?Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Ad voluptas mollitia laboriosam quisquam officia veniam
-              quod, repudiandae voluptatum soluta reiciendis.
-            </p>
-            <button class="btn primary-btn">Check detail</button>
-          </div>
-        </div>
-      </div>
-      <div id="modal-4" class="modal">
-        <!-- modal content -->
-        <div class="modal-content">
-          <span id="modal-close-4" class="modal-close">&times;</span>
-          <div class="img-wrapper">
-            <img src="images/pick-4.jpg" alt="Furano, Hokkaido" />
-          </div>
-          <div class="modal-text">
-            <h4 class="modal-title">Furano, Hokkaido</h4>
-            <span class="tag nature">Nature</span>
-            <p class="modal-location">Hokkaido</p>
-            <p class="modal-paragraph">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptas, cum?Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Ad voluptas mollitia laboriosam quisquam officia veniam
-              quod, repudiandae voluptatum soluta reiciendis.
-            </p>
-            <button class="btn primary-btn">Check detail</button>
-          </div>
-        </div>
-      </div>
-      <div id="modal-5" class="modal">
-        <!-- modal content -->
-        <div class="modal-content">
-          <span id="modal-close-5" class="modal-close">&times;</span>
-          <div class="img-wrapper">
-            <img src="images/pick-5.jpg" alt="Pouring matcha on icecream" />
-          </div>
-          <div class="modal-text">
-            <h4 class="modal-title">Cuisine</h4>
-            <span class="tag food">Culture</span>
-            <p class="modal-location">Kyoto</p>
-            <p class="modal-paragraph">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptas, cum?Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Ad voluptas mollitia laboriosam quisquam officia veniam
-              quod, repudiandae voluptatum soluta reiciendis.
-            </p>
-            <button class="btn primary-btn">Check detail</button>
+            <div class="interest-card swiper-slide">
+              <div class="interest-icon">
+                <i class="fas fa-city fa-5x"></i>
+              </div>
+              <h5 class="interest-title">City Walk</h5>
+              <button class="btn tertiary-btn">Explore</button>
+            </div>
+
+            <div class="interest-card swiper-slide">
+              <div class="interest-icon">
+                <i class="fas fa-leaf fa-5x"></i>
+              </div>
+              <h5 class="interest-title">Nature</h5>
+              <button class="btn tertiary-btn">Explore</button>
+            </div>
+            <div class="interest-card swiper-slide">
+              <div class="interest-icon">
+                <i class="fas fa-hiking fa-5x"></i>
+              </div>
+              <h5 class="interest-title">Adventure</h5>
+              <button class="btn tertiary-btn">Explore</button>
+            </div>
+            <div class="interest-card swiper-slide">
+              <div class="interest-icon">
+                <i class="fas fa-utensils fa-5x"></i>
+              </div>
+              <h5 class="interest-title">Cuisine</h5>
+              <button class="btn tertiary-btn">Explore</button>
+            </div>
+            <div class="interest-card swiper-slide">
+              <div class="interest-icon">
+                <i class="fas fa-umbrella-beach fa-5x"></i>
+              </div>
+              <h5 class="interest-title">Holiday</h5>
+              <button class="btn tertiary-btn">Explore</button>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- testimonial -->
+    <section class="testimonials">
+      <div class="indicators">
+        <span class="left-arrow">
+          <i class="fas fa-chevron-left"></i>
+        </span>
+        <span class="right-arrow">
+          <i class="fas fa-chevron-right"></i>
+        </span>
+        <span class="pg pagination-1 open"></span>
+        <span class="pg pagination-2"></span>
+        <span class="pg pagination-3"></span>
+      </div>
+      <div class="container">
+        <!-- testimonials page 1-->
+        <div class="testimonials-page open">
+          <div class="testimonial">
+            <div class="testimonial-wrapper">
+              <div class="testimonial-icon">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <p class="testimonial-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                dolorum odit, voluptates molestias quod dolore!
+              </p>
+            </div>
+
+            <h5 class="testimonial-name">Darlene Romero</h5>
+            <p class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </p>
+          </div>
+
+          <div class="testimonial">
+            <div class="testimonial-wrapper">
+              <div class="testimonial-icon">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <p class="testimonial-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                dolorum odit, voluptates molestias quod dolore!
+              </p>
+            </div>
+            <h5 class="testimonial-name">Gertrude Patterson</h5>
+            <p class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </p>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial-wrapper">
+              <div class="testimonial-icon">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <p class="testimonial-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                dolorum odit, voluptates molestias quod dolore!
+              </p>
+            </div>
+            <h5 class="testimonial-name">Wallace Freeman</h5>
+            <p class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </p>
+          </div>
+        </div>
+
+        <!-- testimonial page 2-->
+        <div class="testimonials-page">
+          <div class="testimonial">
+            <div class="testimonial-wrapper">
+              <div class="testimonial-icon">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <p class="testimonial-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                dolorum odit, voluptates molestias quod dolore!
+              </p>
+            </div>
+            <h5 class="testimonial-name">Louis Lawrence</h5>
+            <p class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </p>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial-wrapper">
+              <div class="testimonial-icon">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <p class="testimonial-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                dolorum odit, voluptates molestias quod dolore!
+              </p>
+            </div>
+            <h5 class="testimonial-name">Lorraine Phillips</h5>
+            <p class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </p>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial-wrapper">
+              <div class="testimonial-icon">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <p class="testimonial-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                dolorum odit, voluptates molestias quod dolore!
+              </p>
+            </div>
+            <h5 class="testimonial-name">Johnni Fox</h5>
+            <p class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </p>
+          </div>
+        </div>
+
+        <!-- testimonial page 3-->
+        <div class="testimonials-page">
+          <div class="testimonial">
+            <div class="testimonial-wrapper">
+              <div class="testimonial-icon">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <p class="testimonial-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                dolorum odit, voluptates molestias quod dolore!
+              </p>
+            </div>
+            <h5 class="testimonial-name">Ritthy Silva</h5>
+            <p class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </p>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial-wrapper">
+              <div class="testimonial-icon">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <p class="testimonial-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                dolorum odit, voluptates molestias quod dolore!
+              </p>
+            </div>
+            <h5 class="testimonial-name">Gloria Jimenez</h5>
+            <p class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </p>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial-wrapper">
+              <div class="testimonial-icon">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <p class="testimonial-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                dolorum odit, voluptates molestias quod dolore!
+              </p>
+            </div>
+            <h5 class="testimonial-name">Robert Mitchell</h5>
+            <p class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Picks modal -->
+    <div id="modal-1" class="modal">
+      <!-- modal content -->
+      <div class="modal-content">
+        <span id="modal-close-1" class="modal-close">&times;</span>
+        <div class="img-wrapper">
+          <img src="images/pick-1.jpg" alt="Fushimi Inari Shrine" />
+        </div>
+        <div class="modal-text">
+          <h4 class="modal-title">Fushimi Inari Shrine</h4>
+          <span class="culture">Culture</span>
+          <p class="modal-location">Kyoto</p>
+          <p class="modal-paragraph">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
+            cum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+            voluptas mollitia laboriosam quisquam officia veniam quod,
+            repudiandae voluptatum soluta reiciendis.
+          </p>
+          <button class="btn primary-btn">Check detail</button>
+        </div>
+      </div>
+    </div>
+    <div id="modal-2" class="modal">
+      <!-- modal content -->
+      <div class="modal-content">
+        <span id="modal-close-2" class="modal-close">&times;</span>
+        <div class="img-wrapper">
+          <img src="images/pick-2.jpg" alt="Shibuya, Tokyo" />
+        </div>
+        <div class="modal-text">
+          <h4 class="modal-title">Shibuya, Tokyo</h4>
+          <span class="experience">Experience</span>
+          <p class="modal-location">Tokyo</p>
+          <p class="modal-paragraph">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
+            cum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+            voluptas mollitia laboriosam quisquam officia veniam quod,
+            repudiandae voluptatum soluta reiciendis.
+          </p>
+          <button class="btn primary-btn">Check detail</button>
+        </div>
+      </div>
+    </div>
+    <div id="modal-3" class="modal">
+      <!-- modal content -->
+      <div class="modal-content">
+        <span id="modal-close-3" class="modal-close">&times;</span>
+        <div class="img-wrapper">
+          <img src="images/pick-3.jpg" alt="Osaka" />
+        </div>
+        <div class="modal-text">
+          <h4 class="modal-title">Osaka</h4>
+          <span class="food">Food</span>
+          <p class="modal-location">Osaka</p>
+          <p class="modal-paragraph">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
+            cum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+            voluptas mollitia laboriosam quisquam officia veniam quod,
+            repudiandae voluptatum soluta reiciendis.
+          </p>
+          <button class="btn primary-btn">Check detail</button>
+        </div>
+      </div>
+    </div>
+    <div id="modal-4" class="modal">
+      <!-- modal content -->
+      <div class="modal-content">
+        <span id="modal-close-4" class="modal-close">&times;</span>
+        <div class="img-wrapper">
+          <img src="images/pick-4.jpg" alt="Furano, Hokkaido" />
+        </div>
+        <div class="modal-text">
+          <h4 class="modal-title">Furano, Hokkaido</h4>
+          <span class="nature">Nature</span>
+          <p class="modal-location">Hokkaido</p>
+          <p class="modal-paragraph">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
+            cum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+            voluptas mollitia laboriosam quisquam officia veniam quod,
+            repudiandae voluptatum soluta reiciendis.
+          </p>
+          <button class="btn primary-btn">Check detail</button>
+        </div>
+      </div>
+    </div>
+    <div id="modal-5" class="modal">
+      <!-- modal content -->
+      <div class="modal-content">
+        <span id="modal-close-5" class="modal-close">&times;</span>
+        <div class="img-wrapper">
+          <img src="images/pick-5.jpg" alt="Pouring matcha on icecream" />
+        </div>
+        <div class="modal-text">
+          <h4 class="modal-title">Cuisine</h4>
+          <span class="food">Culture</span>
+          <p class="modal-location">Kyoto</p>
+          <p class="modal-paragraph">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
+            cum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+            voluptas mollitia laboriosam quisquam officia veniam quod,
+            repudiandae voluptatum soluta reiciendis.
+          </p>
+          <button class="btn primary-btn">Check detail</button>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

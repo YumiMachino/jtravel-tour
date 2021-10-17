@@ -4,6 +4,7 @@
   position: relative;
   display: inline-block;
   padding: 1rem 0;
+  transform: translateX(90px);
 
   &::before,
   &::after {
@@ -17,11 +18,11 @@
   }
 
   &::before {
-    left: -60%;
+    left: -90px;
   }
 
   &::after {
-    right: -70%;
+    right: -90px;
   }
 }
 

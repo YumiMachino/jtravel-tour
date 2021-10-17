@@ -51,12 +51,27 @@
   color: color(secondary);
 }
 
-.tag {
+%tag {
   font-size: size(xs);
   padding: 0.2rem 0.4rem;
   border-radius: 5px;
 }
 
 .culture {
+  @extend %tag;
   border: 0.2rem solid rgba(color(primary), 0.5);
+}
+.experience {
+  @extend %tag;
+  border: 0.2rem solid rgba(color(secondary), 0.5);
+}
+
+.food {
+  @extend %tag;
+  border: 0.2rem solid rgba(253, 182, 0, 0.5);
+}
+
+.nature {
+  @extend %tag;
+  border: 0.2rem solid rgba(61, 235, 0, 0.5);
 }

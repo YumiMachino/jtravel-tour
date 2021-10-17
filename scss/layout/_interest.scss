@@ -1,0 +1,38 @@
+.interest {
+  width: 100vw;
+  height: 20%;
+
+  .swiper {
+    width: 100%;
+  }
+  .container {
+    @include flexPosition;
+    flex-direction: column;
+  }
+  &-cards {
+    padding: 3.6rem 0;
+    width: 100%;
+    @include flexPosition($justCont: space-around, $alignItem: space-around);
+    // flex-wrap: wrap;
+  }
+  &-card,
+  .swiper-slide {
+    width: 240px;
+    height: 160px;
+    @include flexPosition($justCont: space-around, $alignItem: center);
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  }
+  &-icon {
+    // font size変更するとiconサイズを変更可能,remだから
+    color: color(primary);
+    opacity: 0.75;
+  }
+
+  &-title {
+    font-size: size(md);
+    font-weight: lighter;
+  }
+}

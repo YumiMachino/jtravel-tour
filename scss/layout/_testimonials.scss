@@ -1,0 +1,75 @@
+.testimonials {
+  width: 100vw;
+  height: 24vh;
+  background-color: rgba(color(secondary), 0.1);
+  padding: 12rem 0 16rem 0;
+  position: relative;
+
+  .indicators {
+    .left-arrow {
+      @extend %arrow-style;
+      top: 50%;
+      left: 50px;
+    }
+    .right-arrow {
+      @extend %arrow-style;
+      top: 50%;
+      right: 50px;
+    }
+
+    .pg {
+      width: 10px;
+      height: 10px;
+      background-color: rgba(color(secondary), 0.5);
+      position: absolute;
+      border-radius: 50%;
+      transform: translateX(-50%);
+      transition: background-color 0.2s;
+
+      &.open {
+        background-color: rgba(color(primary), 0.7) !important;
+      }
+    }
+    .pagination-1 {
+      bottom: 8px;
+      left: 49%;
+    }
+    .pagination-2 {
+      bottom: 8px;
+      left: 50%;
+    }
+    .pagination-3 {
+      bottom: 8px;
+      left: 51%;
+    }
+  }
+
+  .container {
+    background-color: yellow;
+    height: 100%;
+    width: 60%;
+  }
+
+  &-page {
+    @include flexPosition($justCont: space-around, $alignItem: center);
+    transform: translateX(-200%);
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s;
+
+    &.open {
+      transform: translateX(0);
+    }
+  }
+}
+
+%arrow-style {
+  position: absolute;
+  width: 20px;
+  height: 30px;
+  color: rgba(color(primary), 0.8);
+  z-index: 30;
+  font-size: 2.4rem;
+  cursor: pointer;
+  transform: translateY(-50%);
+}

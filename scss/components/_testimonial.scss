@@ -1,0 +1,57 @@
+.testimonial {
+  width: 210px;
+  height: 160px;
+  border: 2px solid rgba(color(primary), 0.8);
+  border-radius: 48%;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 10px;
+    right: 12px;
+    border-top: 8px solid rgba(color(primary), 0.8);
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid transparent;
+    transform: rotate(-47deg);
+    // z-index: 100;
+  }
+
+  &-wrapper {
+    @include flexPosition;
+    padding: 10px;
+    width: 180px;
+    height: 160px;
+    margin: auto;
+    position: relative;
+  }
+
+  &-icon {
+    position: absolute;
+    top: 10px;
+    left: 16px;
+    font-size: size(xl);
+    color: rgba(color(secondary), 0.8);
+  }
+
+  &-text {
+    font-weight: 100;
+    font-size: size(xs) * 0.8;
+    color: rgba(color(black), 0.8);
+  }
+
+  &-name {
+    font-size: size(xs);
+    font-weight: 400;
+    text-align: right;
+    color: rgba(color(black), 0.8);
+    padding: 0.8rem 0 0.4rem 0;
+  }
+  &-rating {
+    text-align: right;
+    color: rgba(253, 182, 0, 0.5);
+  }
+}

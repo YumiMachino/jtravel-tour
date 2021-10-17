@@ -6,6 +6,7 @@
   border-radius: 10px;
   text-transform: capitalize;
   transition: transform 0.2s;
+  cursor: pointer;
 
   &:hover {
     transform: scale(0.98);
