@@ -1,0 +1,66 @@
+.news {
+  width: 100vw;
+  height: auto;
+  padding: 3rem 0;
+
+  .title-wrapper {
+    width: 500px;
+  }
+
+  .container {
+    height: 100%;
+    @include flexPosition;
+    flex-direction: column;
+  }
+
+  &-wrapper {
+    width: 80%;
+    height: 300px;
+    margin: 10px auto;
+    border-radius: 1rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    position: relative;
+    padding: 2rem 0;
+  }
+
+  &-block {
+    @include flexPosition($justCont: space-around, $alignItem: center);
+    padding: 1rem 2rem 1rem 0;
+
+    & > span {
+      display: inline-block;
+      font-size: size(xs) * 0.7;
+      font-weight: 200;
+      color: rgba(0, 0, 0, 0.8);
+    }
+  }
+
+  %news-tag-style {
+    padding: 0.1rem 0.2rem;
+    text-transform: uppercase;
+    border-radius: 0.4rem;
+  }
+
+  .travel-tag {
+    @extend %news-tag-style;
+    border: 1.6px solid rgba(color(primary), 0.5);
+  }
+  .news-tag {
+    @extend %news-tag-style;
+    border: 1.6px solid rgba(color(secondary), 0.5);
+  }
+
+  &-text {
+    font-size: size(xs) * 0.7;
+    font-weight: 200;
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  &-link {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    text-decoration: none;
+    color: rgba(color(primary), 0.7);
+  }
+}
