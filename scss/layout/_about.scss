@@ -107,7 +107,7 @@
   &-page {
     font-size: size(md);
     padding: 2rem;
-    font-weight: 200;
+    font-weight: 400;
     color: rgba(0, 0, 0, 0.8);
     margin: 3px 0;
     position: relative;
@@ -125,9 +125,11 @@
     .fa-angle-down {
       display: block;
       cursor: pointer;
+      z-index: 30;
     }
     .fa-angle-up {
       display: none;
+      z-index: 30;
     }
   }
 

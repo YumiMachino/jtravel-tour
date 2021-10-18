@@ -4,23 +4,26 @@ const pick_btns = document.querySelectorAll(".pick-btn");
 const modal_close_btns = document.querySelectorAll(".modal-close");
 
 // testimonial indicators
-const testi_left_arrow = document.querySelector(".left-arrow");
-const testi_right_arrow = document.querySelector(".right-arrow");
-const paginations = document.querySelectorAll(".pg");
-const testiPages = document.querySelectorAll(".testimonials-page");
-let index = 0;
+// const testi_left_arrow = document.querySelector(".left-arrow");
+// const testi_right_arrow = document.querySelector(".right-arrow");
+// const paginations = document.querySelectorAll(".pg");
+// const testiPages = document.querySelectorAll(".testimonials-page");
+// let index = 0;
 
 // FAQ
-const faq_angle_down_arrows = document.querySelectorAll(".fa-angle-down");
-const faq_angle_up_arrows = document.querySelectorAll(".fa-angle-up");
-const faqs = document.querySelectorAll(".faq");
+// const faq_angle_down_arrows = document.querySelectorAll(".fa-angle-down");
+// const faq_angle_up_arrows = document.querySelectorAll(".fa-angle-up");
+// const faqs = document.querySelectorAll(".faq");
 
 // Features
 // const featureSections = document.querySelectorAll(".featured-section");
 // const feature_left_arrow = document.querySelector(".f-left-arrow");
 // const feature_right_arrow = document.querySelector(".f-right-arrow");
+
 // const feature_num = document.querySelector(".slide-num");
 // let featureInd = 0;
+
+// console.log(feature_left_arrow);
 
 // feature_left_arrow.addEventListener("click", () => {
 //   featureInd--;
@@ -49,45 +52,49 @@ const faqs = document.querySelectorAll(".faq");
 //   feature_num.innerText = featureInd + 1;
 // }
 
-faq_angle_down_arrows.forEach((down_arrow) => {
-  down_arrow.addEventListener("click", (e) => toggleFAQ(e));
-});
+// faq_angle_down_arrows.forEach((down_arrow) => {
+//   down_arrow.addEventListener("click", (e) => {
+//     console.log("clicked");
+//     toggleFAQ(e);
+//   });
+// });
 
-faq_angle_up_arrows.forEach((up_arrow) => {
-  up_arrow.addEventListener("click", (e) => toggleFAQ(e));
-});
+// faq_angle_up_arrows.forEach((up_arrow) => {
+//   up_arrow.addEventListener("click", (e) => toggleFAQ(e));
+// });
 
-function toggleFAQ(e) {
-  const ele = e.target.parentElement.parentElement.parentElement;
-  ele.classList.toggle("active");
-}
+// function toggleFAQ(e) {
+//   console.log("toggling");
+//   const ele = e.target.parentElement.parentElement.parentElement;
+//   ele.classList.toggle("active");
+// }
 
-testi_left_arrow.addEventListener("click", () => {
-  index--;
-  slideTesti();
-});
-testi_right_arrow.addEventListener("click", () => {
-  index++;
-  slideTesti();
-});
+// testi_left_arrow.addEventListener("click", () => {
+//   index--;
+//   slideTesti();
+// });
+// testi_right_arrow.addEventListener("click", () => {
+//   index++;
+//   slideTesti();
+// });
 
-// slide testimonial page
-function slideTesti() {
-  if (index < 0) {
-    index = testiPages.length - 1;
-  } else if (testiPages.length - 1 < index) {
-    index = 0;
-  }
-  // remove open from
-  testiPages.forEach((page) => {
-    page.classList.remove("open");
-  });
-  paginations.forEach((pg) => {
-    pg.classList.remove("open");
-  });
-  testiPages[index].classList.add("open");
-  paginations[index].classList.add("open");
-}
+// // slide testimonial page
+// function slideTesti() {
+//   if (index < 0) {
+//     index = testiPages.length - 1;
+//   } else if (testiPages.length - 1 < index) {
+//     index = 0;
+//   }
+//   // remove open from
+//   testiPages.forEach((page) => {
+//     page.classList.remove("open");
+//   });
+//   paginations.forEach((pg) => {
+//     pg.classList.remove("open");
+//   });
+//   testiPages[index].classList.add("open");
+//   paginations[index].classList.add("open");
+// }
 
 // pick up card button
 pick_btns.forEach((btn) => {
@@ -140,23 +147,6 @@ function closeModalFromWindow(id) {
 
 // Swiper for interest cards
 var swiper = new Swiper(".mySwiper", {
-  effect: "coverflow",
-  grabCursor: true,
-  centeredSlides: true,
-  slidesPerView: "auto",
-  coverflowEffect: {
-    rotate: 30,
-    stretch: 0,
-    depth: 50,
-    modifier: 1,
-    slideShadows: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-  },
-});
-
-var swiper2 = new Swiper(".swiper-2", {
   effect: "coverflow",
   grabCursor: true,
   centeredSlides: true,
