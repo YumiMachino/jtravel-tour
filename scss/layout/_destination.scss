@@ -18,6 +18,7 @@
   width: 100vw;
   height: auto;
   background-color: yellow;
+  opacity: 0.2;
   @include flexPosition;
   flex-direction: column;
 
@@ -68,7 +69,6 @@
     position: relative;
     width: 100%;
     height: 14vw;
-    position: relative;
 
     .arrow {
       font-size: size(lg);
@@ -96,6 +96,7 @@
       background-size: cover;
       padding: 3rem;
       position: relative;
+      //   transform: translateX(-200%);
 
       .text-wrapper {
         position: absolute;
@@ -116,6 +117,21 @@
         font-weight: 300;
         color: color(white);
       }
+
+      //   &.show & {
+      //     transform: translateX(0);
+      //   }
+    }
+
+    .feature-bg-2 {
+      background: url(../images/feature-2.jpg) no-repeat center;
+      background-size: cover;
+      transform: translateX(-200%);
+    }
+    .feature-bg-3 {
+      background: url(../images/feature-3.jpg) no-repeat center;
+      background-size: cover;
+      transform: translateX(-200%);
     }
   }
 }
