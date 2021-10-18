@@ -1,0 +1,28 @@
+.package {
+  width: 300px;
+  height: 350px;
+  margin: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  padding: 0 10px 10px 10px;
+
+  border-radius: 0.4rem;
+  @include flexPosition($justCont: space-around, $alignItem: center);
+  flex-direction: column;
+  text-align: center;
+
+  .img-wrapper {
+    height: 60%;
+    width: 90%;
+  }
+  &-name {
+    font-size: size(xs);
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 400;
+  }
+  &-text {
+    font-size: size(xs) * 0.8;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 400;
+  }
+}

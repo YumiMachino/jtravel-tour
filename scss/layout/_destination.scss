@@ -14,15 +14,20 @@
   }
 }
 
+.section-subtitle {
+  font-size: size(md);
+  font-weight: 200;
+  margin-bottom: 3rem;
+}
+
 .packages {
   width: 100vw;
   height: auto;
-  background-color: yellow;
-  opacity: 0.2;
   @include flexPosition;
   flex-direction: column;
 
   .container {
+    padding: 3rem 0;
     @include flexPosition;
     flex-direction: column;
   }
@@ -33,42 +38,19 @@
   }
 }
 
-.package {
-  width: 300px;
-  height: 350px;
-  margin: 10px;
-  border: 1px solid black;
-  padding: 0 10px 10px 10px;
-
-  border-radius: 0.4rem;
-  @include flexPosition($justCont: space-around, $alignItem: center);
-  flex-direction: column;
-
-  .img-wrapper {
-    height: 60%;
-    width: 90%;
-  }
-  &-name {
-    font-size: size(xs);
-    color: rgba(0, 0, 0, 0.8);
-    font-weight: 400;
-  }
-  &-text {
-    font-size: size(xs) * 0.8;
-    color: rgba(0, 0, 0, 0.8);
-    font-weight: 400;
-  }
-}
-
 .features {
   width: 100%;
   @include flexPosition;
   flex-direction: column;
 
+  .title-wrapper {
+    width: 450px;
+  }
+
   &-wrapper {
     position: relative;
     width: 100%;
-    height: 14vw;
+    height: 20vw;
 
     .arrow {
       font-size: size(lg);
@@ -78,11 +60,25 @@
       z-index: 10;
       color: rgba(255, 255, 255, 0.8);
     }
-    .left-arrow {
+    .f-left-arrow {
       left: 3rem;
     }
-    .right-arrow {
+    .f-right-arrow {
       right: 3rem;
+    }
+
+    .feature-number {
+      position: absolute;
+      bottom: 1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50px;
+      height: 30px;
+      z-index: 10;
+      font-size: size(xs);
+      color: rgba(255, 255, 255, 0.8);
+      font-weight: 600;
+      font-style: italic;
     }
 
     .featured-section {
@@ -94,14 +90,14 @@
       background-color: red;
       background: url(../images/feature-1.jpg) no-repeat center;
       background-size: cover;
-      padding: 3rem;
+      padding: 4rem;
       position: relative;
-      //   transform: translateX(-200%);
+      display: none;
 
       .text-wrapper {
         position: absolute;
         bottom: 4rem;
-        right: 4rem;
+        right: 6rem;
         @include flexPosition($justCont: space-around, $alignItem: flex-start);
         flex-direction: column;
         height: 60%;
@@ -118,20 +114,16 @@
         color: color(white);
       }
 
-      //   &.show & {
-      //     transform: translateX(0);
-      //   }
+      &.show {
+        display: block;
+      }
     }
 
     .feature-bg-2 {
       background: url(../images/feature-2.jpg) no-repeat center;
-      background-size: cover;
-      transform: translateX(-200%);
     }
     .feature-bg-3 {
       background: url(../images/feature-3.jpg) no-repeat center;
-      background-size: cover;
-      transform: translateX(-200%);
     }
   }
 }
