@@ -1,0 +1,213 @@
+.about-us {
+  width: 100%;
+  height: auto;
+  @include flexPosition;
+  flex-direction: column;
+}
+
+.title-wrapper {
+  width: 350px;
+}
+
+.about-flex-wrapper {
+  width: 100%;
+  padding: 3rem 0;
+  @include flexPosition;
+  flex-wrap: wrap;
+}
+
+.about-flex-item {
+  @include flexPosition;
+  flex-direction: column;
+  width: 300px;
+}
+
+.item-title {
+  font-size: size(md);
+  color: rgba(0, 0, 0, 0.8);
+  padding: 0.8rem 0;
+  font-weight: 400;
+}
+
+.item-text {
+  font-size: size(xs);
+  font-weight: 200;
+}
+
+.missions {
+  width: 100%;
+  margin: 4rem 0;
+  height: auto;
+  @include flexPosition($justCont: center, $alignItem: center);
+  flex-direction: column;
+  background-color: rgba(color(secondary), 0.1);
+}
+
+.mission {
+  padding: 2rem;
+  span {
+    font-size: size(xl) * 2;
+    color: rgba(color(primary), 0.8);
+  }
+}
+
+.section-sub-title {
+  font-size: size(lg);
+  font-weight: 400;
+}
+
+.team {
+  width: 100%;
+  height: auto;
+  @include flexPosition;
+  flex-direction: column;
+  &-member {
+    margin: 20px;
+
+    &-title {
+      color: color(secondary);
+      padding: 0.8rem 0 0.3rem 0;
+      font-size: size(xs) * 0.8;
+    }
+  }
+  .member-img {
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+  }
+}
+
+.faqs {
+  @include flexPosition;
+  flex-direction: column;
+}
+
+.hr-line {
+  width: 100%;
+  margin: auto;
+}
+
+.faq-container {
+  @include flexPosition;
+  flex-direction: column;
+  padding: 30px 20px;
+  width: 60%;
+  margin: auto;
+}
+
+.faq-body {
+  margin: auto;
+  width: 50%;
+  padding: auto;
+}
+
+.faq {
+  width: 100%;
+
+  &-page {
+    font-size: size(md);
+    padding: 2rem;
+    font-weight: 200;
+    color: rgba(0, 0, 0, 0.8);
+    margin: 3px 0;
+    position: relative;
+  }
+
+  .arrows {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    width: 10px;
+    height: 10px;
+    color: rgba(color(primary), 0.8);
+    transform: translateY(-50%);
+
+    .fa-angle-down {
+      display: block;
+      cursor: pointer;
+    }
+    .fa-angle-up {
+      display: none;
+    }
+  }
+
+  &-body {
+    width: 80%;
+    height: 100px;
+    font-size: size(xs);
+    font-weight: 200;
+    color: rgba(0, 0, 0, 0.8);
+    display: none;
+  }
+
+  &.active &-body {
+    display: block;
+    @include flexPosition;
+  }
+
+  &.active .fa-angle-down {
+    display: none;
+  }
+  &.active .fa-angle-up {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.contact {
+  width: 100%;
+  height: 30vw;
+  @include flexPosition;
+  flex-direction: column;
+
+  form {
+    width: 600px;
+    height: 500px;
+    @include flexPosition($justCont: space-around, $alignItem: center);
+    flex-direction: column;
+    background-color: rgba(color(primary), 0.7);
+    margin: 3rem 0;
+    border-radius: 0.2rem;
+
+    .input-details {
+      width: 70%;
+    }
+    label {
+      width: 100%;
+      display: inline-block;
+      font-size: size(xs);
+      color: color(white);
+      padding-bottom: 0.4rem;
+    }
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+      padding: 1rem;
+    }
+    textarea {
+      width: 100%;
+      height: 100px;
+      max-width: 100%;
+      max-height: 200px;
+      font-family: inherit;
+    }
+    input,
+    textarea {
+      outline: none;
+      border: 1px solid rgba(color(secondary), 0.6);
+      border-radius: 0.2rem;
+      color: rgba(0, 0, 0, 0.8);
+      font-family: inherit;
+
+      &:focus {
+        border: 1px solid rgba(color(primary), 0.8);
+      }
+    }
+    input:last-child {
+      border: none;
+    }
+    input[type="submit"] {
+      color: rgba(color(primary), 0.7);
+    }
+  }
+}

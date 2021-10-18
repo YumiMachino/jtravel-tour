@@ -70,6 +70,10 @@
     border-radius: 0.3rem;
     outline: none;
     border: 1px solid rgba(color(secondary), 0.5);
+
+    &:focus {
+      border: 2px solid rgba(color(primary), 0.8);
+    }
   }
   input::placeholder {
     font-family: inherit;
