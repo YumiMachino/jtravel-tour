@@ -1,0 +1,121 @@
+.desti-heading {
+  width: 100vw;
+  height: 14vw;
+  background: url(../images/destination-heading.jpg) no-repeat center;
+  background-size: cover;
+
+  .desti-heading-main {
+    width: 100%;
+    height: 100%;
+    @include flexPosition;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: size(xl) * 1.2;
+    letter-spacing: 0.4rem;
+  }
+}
+
+.packages {
+  width: 100vw;
+  height: auto;
+  background-color: yellow;
+  @include flexPosition;
+  flex-direction: column;
+
+  .container {
+    @include flexPosition;
+    flex-direction: column;
+  }
+
+  &-wrapper {
+    @include flexPosition;
+    flex-wrap: wrap;
+  }
+}
+
+.package {
+  width: 300px;
+  height: 350px;
+  margin: 10px;
+  border: 1px solid black;
+  padding: 0 10px 10px 10px;
+
+  border-radius: 0.4rem;
+  @include flexPosition($justCont: space-around, $alignItem: center);
+  flex-direction: column;
+
+  .img-wrapper {
+    height: 60%;
+    width: 90%;
+  }
+  &-name {
+    font-size: size(xs);
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 400;
+  }
+  &-text {
+    font-size: size(xs) * 0.8;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 400;
+  }
+}
+
+.features {
+  width: 100%;
+  @include flexPosition;
+  flex-direction: column;
+
+  &-wrapper {
+    position: relative;
+    width: 100%;
+    height: 14vw;
+    position: relative;
+
+    .arrow {
+      font-size: size(lg);
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+      color: rgba(255, 255, 255, 0.8);
+    }
+    .left-arrow {
+      left: 3rem;
+    }
+    .right-arrow {
+      right: 3rem;
+    }
+
+    .featured-section {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: red;
+      background: url(../images/feature-1.jpg) no-repeat center;
+      background-size: cover;
+      padding: 3rem;
+      position: relative;
+
+      .text-wrapper {
+        position: absolute;
+        bottom: 4rem;
+        right: 4rem;
+        @include flexPosition($justCont: space-around, $alignItem: flex-start);
+        flex-direction: column;
+        height: 60%;
+      }
+
+      .featured-title {
+        font-size: size(lg);
+        font-weight: 400;
+        color: color(white);
+      }
+      .featured-text {
+        font-size: size(sm);
+        font-weight: 300;
+        color: color(white);
+      }
+    }
+  }
+}
