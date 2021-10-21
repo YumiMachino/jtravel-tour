@@ -6,6 +6,14 @@
   padding: 1rem 0;
   transform: translateX(90px);
 
+  @include responsive(md) {
+    font-size: size(lg);
+  }
+
+  @include responsive(sm) {
+    font-size: size(md);
+  }
+
   &::before,
   &::after {
     content: "";
@@ -30,4 +38,8 @@
   font-size: size(sm);
   font-weight: 300;
   letter-spacing: 0.1rem;
+
+  @include responsive(sm) {
+    font-size: size(xs);
+  }
 }

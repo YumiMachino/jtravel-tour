@@ -5,6 +5,9 @@
 
   .title-wrapper {
     width: 500px;
+    @include responsive(sm) {
+      width: 400px;
+    }
   }
 
   .container {
@@ -21,11 +24,23 @@
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     position: relative;
     padding: 2rem 0;
+
+    @include responsive(md) {
+      width: 90%;
+    }
+    @include responsive(sm) {
+      width: 100%;
+      height: auto;
+    }
   }
 
   &-block {
     @include flexPosition($justCont: space-around, $alignItem: center);
     padding: 1rem 2rem 1rem 0;
+
+    @include responsive(sm) {
+      flex-direction: column;
+    }
 
     & > span {
       display: inline-block;
@@ -62,5 +77,10 @@
     right: 2rem;
     text-decoration: none;
     color: rgba(color(primary), 0.7);
+
+    @include responsive(sm) {
+      bottom: 1rem;
+      right: 1rem;
+    }
   }
 }

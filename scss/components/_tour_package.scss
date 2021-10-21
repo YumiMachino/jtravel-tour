@@ -11,18 +11,36 @@
   flex-direction: column;
   text-align: center;
 
+  @include responsive(md) {
+    width: 240px;
+    height: 280px;
+  }
+
   .img-wrapper {
     height: 60%;
     width: 90%;
+
+    @include responsive(md) {
+      height: 80%;
+    }
   }
   &-name {
     font-size: size(xs);
     color: rgba(0, 0, 0, 0.8);
     font-weight: 400;
+
+    @include responsive(md) {
+      padding: 1rem 0;
+      font-weight: 600;
+    }
   }
   &-text {
     font-size: size(xs) * 0.8;
     color: rgba(0, 0, 0, 0.8);
     font-weight: 400;
+
+    @include responsive(md) {
+      display: none;
+    }
   }
 }

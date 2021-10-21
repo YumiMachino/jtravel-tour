@@ -5,6 +5,14 @@
   border-radius: 48%;
   position: relative;
 
+  @include responsive(lg) {
+    margin: 0 5px;
+  }
+  @include responsive(sm) {
+    width: 130px;
+    height: 120px;
+  }
+
   &::after {
     content: "";
     width: 0;
@@ -17,6 +25,13 @@
     border-bottom: 8px solid transparent;
     border-left: 8px solid transparent;
     transform: rotate(-47deg);
+
+    @include responsive(lg) {
+      right: 10px;
+    }
+    @include responsive(sm) {
+      display: none;
+    }
   }
 
   &-wrapper {
@@ -26,6 +41,11 @@
     height: 160px;
     margin: auto;
     position: relative;
+
+    @include responsive(sm) {
+      width: 120px;
+      height: 110px;
+    }
   }
 
   &-icon {
@@ -34,12 +54,19 @@
     left: 16px;
     font-size: size(xl);
     color: rgba(color(secondary), 0.8);
+    @include responsive(sm) {
+      top: -10px;
+      font-size: size(md);
+    }
   }
 
   &-text {
     font-weight: 100;
     font-size: size(xs) * 0.8;
     color: rgba(color(black), 0.8);
+    @include responsive(sm) {
+      font-size: size(xs) * 0.7;
+    }
   }
 
   &-name {
@@ -48,6 +75,10 @@
     text-align: right;
     color: rgba(color(black), 0.8);
     padding: 0.8rem 0 0.4rem 0;
+
+    @include responsive(sm) {
+      font-size: size(xs) * 0.8;
+    }
   }
   &-rating {
     text-align: right;

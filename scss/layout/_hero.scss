@@ -3,6 +3,10 @@
   height: 60vh;
   position: relative;
 
+  @include responsive(sm) {
+    height: 40vh;
+  }
+
   &-bg {
     position: absolute;
     top: 0;
@@ -11,7 +15,6 @@
     height: inherit;
     opacity: 0;
     visibility: hidden;
-    // animation: slideshow 12s linear infinite;
     @include animation(slideshow 12s linear infinite);
   }
 
@@ -20,13 +23,43 @@
     bottom: 20%;
     right: 20rem;
 
+    @include responsive(lg) {
+      bottom: 16%;
+      right: 10rem;
+    }
+
+    @include responsive(sm) {
+      bottom: 8%;
+      right: 1rem;
+    }
+
     &-main {
       @include pageHeadingStyles;
+
+      @include responsive(lg) {
+        @include pageHeadingStyles($font-size: size(lg));
+      }
+      @include responsive(md) {
+        @include pageHeadingStyles($font-size: size(md));
+      }
+      @include responsive(sm) {
+        @include pageHeadingStyles($font-size: size(sm));
+      }
     }
 
     &-sub {
       @include pageHeadingStyles($font-size: size(md));
       padding-bottom: 2rem;
+
+      @include responsive(lg) {
+        @include pageHeadingStyles($font-size: size(sm));
+      }
+      @include responsive(md) {
+        @include pageHeadingStyles($font-size: size(xs));
+      }
+      @include responsive(sm) {
+        @include pageHeadingStyles($font-size: size(xs) * 0.8);
+      }
     }
   }
 }

@@ -9,12 +9,19 @@
     @include flexPosition;
     flex-direction: column;
 
-    .interest-section-text {
+    .title-wrapper {
       // background-color: red;
       width: 550px;
+
+      @include responsive(sm) {
+        width: 430px;
+      }
     }
     .section-paragraph {
       width: 650px;
+      @include responsive(sm) {
+        width: 430px;
+      }
     }
   }
 
@@ -33,15 +40,32 @@
     border-radius: 5px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
       rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+    @include responsive(lg) {
+      width: 200px;
+      height: 140px;
+    }
+    @include responsive(sm) {
+      width: 160px;
+      height: 120px;
+    }
   }
   &-icon {
     // font size変更するとiconサイズを変更可能,remだから
     color: color(primary);
     opacity: 0.75;
+
+    @include responsive(lg) {
+      font-size: 8px;
+    }
   }
 
   &-title {
     font-size: size(md);
     font-weight: lighter;
+
+    @include responsive(sm) {
+      font-size: size(xs);
+    }
   }
 }

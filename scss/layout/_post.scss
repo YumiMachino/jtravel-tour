@@ -8,12 +8,20 @@
     font-size: size(xl);
     margin-left: 8rem;
     padding: 1rem 0;
+
+    @include responsive(sm) {
+      font-size: size(lg);
+      margin-left: 4rem;
+    }
   }
   .post-date {
     font-size: size(xs);
     font-weight: 200;
     margin-left: 8rem;
     text-align: left;
+    @include responsive(sm) {
+      margin-left: 4rem;
+    }
   }
   .container {
     margin: 3rem auto;
@@ -22,9 +30,21 @@
     flex-direction: column;
     width: 60%;
 
+    @include responsive(md) {
+      width: 80%;
+    }
+
     .img-wrapper {
       width: 80%;
       height: 350px;
+
+      @include responsive(md) {
+        height: 240px;
+      }
+      @include responsive(sm) {
+        width: 90%;
+        height: 180px;
+      }
     }
   }
 }
@@ -38,6 +58,9 @@
 
   .post-title {
     font-size: size(lg);
+    @include responsive(sm) {
+      font-size: size(sm);
+    }
   }
   .post-para {
     font-size: size(xs);
@@ -59,12 +82,25 @@
   @include flexPosition;
   border-radius: 0.4rem;
   border: 1px solid rgba(color(secondary), 0.8);
+  @include responsive(md) {
+    height: 16vw;
+    padding: 6px;
+  }
 
   &-img-wrapper {
     width: 100px;
     height: 100px;
     img {
       border-radius: 50%;
+    }
+
+    @include responsive(md) {
+      width: 70px;
+      height: 70px;
+    }
+    @include responsive(sm) {
+      width: 100px;
+      height: 60px;
     }
   }
   &-text {

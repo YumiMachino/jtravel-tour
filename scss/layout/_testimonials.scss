@@ -10,11 +10,24 @@
       @extend %arrow-style;
       top: 50%;
       left: 50px;
+
+      @include responsive(lg) {
+        left: 25px;
+      }
+      @include responsive(sm) {
+        left: 15px;
+      }
     }
     .right-arrow {
       @extend %arrow-style;
       top: 50%;
       right: 50px;
+      @include responsive(lg) {
+        right: 25px;
+      }
+      @include responsive(sm) {
+        right: 15px;
+      }
     }
 
     .pg {
@@ -33,6 +46,13 @@
     .pagination-1 {
       bottom: 8px;
       left: 49%;
+
+      @include responsive(lg) {
+        left: 48%;
+      }
+      @include responsive(sm) {
+        left: 46%;
+      }
     }
     .pagination-2 {
       bottom: 8px;
@@ -41,11 +61,16 @@
     .pagination-3 {
       bottom: 8px;
       left: 51%;
+      @include responsive(lg) {
+        left: 52%;
+      }
+      @include responsive(sm) {
+        left: 54%;
+      }
     }
   }
 
   .container {
-    background-color: yellow;
     height: 100%;
     width: 60%;
   }

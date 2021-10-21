@@ -7,6 +7,11 @@
 
 .title-wrapper {
   width: 350px;
+  padding: 20px 0;
+
+  @include responsive(md) {
+    width: 320px;
+  }
 }
 
 .about-flex-wrapper {
@@ -27,20 +32,33 @@
   color: rgba(0, 0, 0, 0.8);
   padding: 0.8rem 0;
   font-weight: 400;
+
+  @include responsive(md) {
+    font-size: size(sm);
+  }
 }
 
 .item-text {
   font-size: size(xs);
   font-weight: 200;
+
+  @include responsive(md) {
+    font-size: size(xs) * 0.8;
+  }
 }
 
 .missions {
   width: 100%;
   margin: 4rem 0;
   height: auto;
-  @include flexPosition($justCont: center, $alignItem: center);
+  @include flexPosition;
   flex-direction: column;
   background-color: rgba(color(secondary), 0.1);
+
+  @include responsive(md) {
+    width: 50%;
+    margin: 30px auto;
+  }
 }
 
 .mission {
@@ -48,6 +66,10 @@
   span {
     font-size: size(xl) * 2;
     color: rgba(color(primary), 0.8);
+
+    @include responsive(md) {
+      font-size: size(xl);
+    }
   }
 }
 
@@ -77,9 +99,20 @@
   }
 }
 
+/* 
+FAQ section
+*/
 .faqs {
   @include flexPosition;
   flex-direction: column;
+  height: auto;
+  margin: 10px 0;
+
+  .title-wrapper {
+    @include responsive(md) {
+      width: 250px;
+    }
+  }
 }
 
 .hr-line {
@@ -90,15 +123,16 @@
 .faq-container {
   @include flexPosition;
   flex-direction: column;
-  padding: 30px 20px;
   width: 60%;
-  margin: auto;
+  height: auto;
+
+  @include responsive(md) {
+    width: 100%;
+  }
 }
 
 .faq-body {
-  margin: auto;
   width: 50%;
-  padding: auto;
 }
 
 .faq {
@@ -106,11 +140,15 @@
 
   &-page {
     font-size: size(md);
-    padding: 2rem;
+    padding: 1rem;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.8);
     margin: 3px 0;
     position: relative;
+
+    @include responsive(md) {
+      font-size: size(xs);
+    }
   }
 
   .arrows {
@@ -140,6 +178,7 @@
     font-weight: 200;
     color: rgba(0, 0, 0, 0.8);
     display: none;
+    margin: 0 auto;
   }
 
   &.active &-body {
@@ -156,6 +195,10 @@
   }
 }
 
+/*
+Contact section 
+*/
+
 .contact {
   width: 100%;
   height: 30vw;
@@ -170,6 +213,10 @@
     background-color: rgba(color(primary), 0.7);
     margin: 3rem 0;
     border-radius: 0.2rem;
+
+    @include responsive(md) {
+      width: 400px;
+    }
 
     .input-details {
       width: 70%;
@@ -211,5 +258,9 @@
     input[type="submit"] {
       color: rgba(color(primary), 0.7);
     }
+  }
+
+  @include responsive(xl) {
+    height: 60vh;
   }
 }

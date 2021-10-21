@@ -1,22 +1,61 @@
 .footer-links {
   width: 100%;
-  height: 20vw;
+  height: 12vw;
   background-color: rgba(color(secondary), 0.8);
+
+  @include responsive(xl) {
+    height: 16rem;
+  }
+  @include responsive(md) {
+    height: 18rem;
+  }
 
   &-wrapper {
     padding: 3rem;
     height: 100%;
     @include flexPosition($justCont: space-around, $alignItem: center);
+
+    @include responsive(sm) {
+      padding: 1rem;
+    }
   }
 
   .footer-logo {
     width: 180px;
     margin-right: auto;
+
+    @include responsive(xl) {
+      width: 160px;
+    }
+    @include responsive(md) {
+      display: none;
+    }
   }
 
   .footer-link-items {
     width: 20%;
+    margin: 0 2rem;
     height: 90%;
+
+    @include responsive(xl) {
+      height: 70%;
+      @include flexPosition;
+      flex-direction: column;
+    }
+    @include responsive(sm) {
+      width: 50%;
+    }
+
+    &:first-of-type {
+      @include responsive(md) {
+        display: none;
+      }
+    }
+    &:last-of-type {
+      @include responsive(sm) {
+        display: none;
+      }
+    }
   }
 
   .footer-link-title {
@@ -24,6 +63,7 @@
     color: color(white);
     font-weight: 300;
     letter-spacing: 0.1rem;
+    // min-height: 40px;
   }
 
   .footer-link {
@@ -33,23 +73,37 @@
     position: relative;
     padding: 0.8rem 0;
     transition: color 0.2s;
+    font-size: size(xs) * 0.8;
+    font-weight: 300;
 
     &:hover {
       color: rgba(color(primary), 0.8);
+    }
+
+    @include responsive(xl) {
+      padding: 0.2rem 0;
     }
   }
 
   .footer-link-wrapper {
     @include flexPosition($justCont: center, $alignItem: flex-start);
     flex-direction: column;
-    height: 70%;
+    height: 80%;
     color: color(white);
+
+    @include responsive(xl) {
+      height: 100%;
+    }
   }
 
   .subscribe-text {
     padding-top: 2rem;
     font-size: size(xs) * 0.8;
     font-weight: 200;
+
+    @include responsive(sm) {
+      padding-top: 1rem;
+    }
   }
 
   form {
@@ -62,6 +116,12 @@
     width: inherit;
     height: inherit;
     @include flexPosition($justCont: flex-start, $alignItem: flex-start);
+    @include responsive(md) {
+      flex-direction: column;
+    }
+    @include responsive(sm) {
+      padding: 0;
+    }
   }
 
   input[type="email"] {
@@ -89,6 +149,8 @@
   }
   .contact-text {
     padding: 0.3rem 0;
+    font-size: size(xs) * 0.8;
+    font-weight: 300;
   }
 
   .footer-link-wrapper:last-child > span {

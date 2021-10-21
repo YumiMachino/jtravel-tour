@@ -19,6 +19,10 @@
     @include linkStyles;
     position: relative;
 
+    @include responsive(lg) {
+      font-size: size(xs);
+    }
+
     &::after {
       content: "";
       width: 0;
@@ -61,6 +65,7 @@
     background-color: color(light);
     opacity: 0;
     visibility: none;
+
     transition: all 0.2s;
     border-radius: 5px;
     z-index: 100;
@@ -85,4 +90,10 @@
 .logo {
   width: 120px;
   height: 100px;
+
+  
+  @include responsive(md) {
+    width: 100px;
+    height: 80px;
+  }
 }

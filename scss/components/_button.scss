@@ -11,6 +11,10 @@
   &:hover {
     transform: scale(0.98);
   }
+
+  @include responsive(xl) {
+    padding: 1.2rem 2rem;
+  }
 }
 
 .primary-btn {
