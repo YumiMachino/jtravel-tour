@@ -4,7 +4,6 @@
   background-color: color(light);
   z-index: 100;
   position: relative;
-  // overflow: hidden; //
 
   .container {
     height: 100%;
@@ -106,26 +105,3 @@
     height: 60px;
   }
 }
-
-// .hamburger-menu {
-//   display: none;
-
-//   @include responsive(sm) {
-//     display: block;
-//     width: 32px;
-//     height: 32px;
-//     background-color: red;
-//     position: absolute;
-//     top: 50%;
-//     right: 12px;
-//     transform: translateY(-50%);
-//     @include flexPosition($justCont: space-around, $alignItem: center);
-//   }
-
-//   .line {
-//     width: 100%;
-//     height: 100%;
-//     height: 0.1rem;
-//     background-color: color(black);
-//   }
-// }

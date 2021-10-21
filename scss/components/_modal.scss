@@ -16,12 +16,23 @@
     width: 50%;
     background-color: color(light);
     border: 0.1rem solid color(secondary);
+
+    @include responsive(md) {
+      width: 80%;
+    }
+    @include responsive(xs) {
+      width: 90%;
+      padding: 1rem;
+    }
   }
 
   .img-wrapper {
     width: 70%;
     height: 20%;
     margin: 0 auto;
+    @include responsive(xs) {
+      width: 80%;
+    }
   }
 
   &-text {
@@ -34,12 +45,23 @@
   &-title {
     font-size: size(lg);
     padding: 0.4rem 0;
+    @include responsive(sm) {
+      font-size: size(md);
+    }
   }
 
   &-location,
   &-paragraph {
     font-size: size(sm) * 0.8;
     margin: 1rem 0;
+    @include responsive(sm) {
+      font-size: size(xs);
+    }
+  }
+  &-paragraph {
+    @include responsive(xs) {
+      display: none;
+    }
   }
 }
 

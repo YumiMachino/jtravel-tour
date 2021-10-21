@@ -28,10 +28,3 @@ $font-sizes: (
 @function size($size) {
   @return map-get($map: $font-sizes, $key: $size);
 }
-
-@mixin sectionHeadingStyles($fontSize: 50px) {
-}
-
-@function doubleSize($size) {
-  @return $size * 2;
-}

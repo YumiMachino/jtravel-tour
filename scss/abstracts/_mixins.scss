@@ -1,28 +1,11 @@
-/*
-flex layout position, text styles, centering, fullspace
-navigation
-footerlist
-responsive
-*/
-
-// @mixin navigation {
-//   &-items {
-//     list-style: none;
-//   }
-
-//   &-link {
-//     text-decoration: none;
-//     text-transform: uppercase;
-//     padding: 1rem 0;
-//   }
-// }
-
+// Flexbox
 @mixin flexPosition($justCont: center, $alignItem: center) {
   display: flex;
   justify-content: $justCont;
   align-items: $alignItem;
 }
 
+// Styling link element
 @mixin linkStyles(
   $transform: uppercase,
   $color: color(black),
@@ -50,6 +33,7 @@ responsive
   animation: $animation;
 }
 
+// Responsive breakpoints
 @mixin responsive($breakpoint) {
   @if ($breakpoint == xl) {
     @media (max-width: 1200px) {
@@ -67,15 +51,9 @@ responsive
     @media (max-width: 775px) {
       @content;
     }
-    // @media (max-width: 700px) {
-    //   @content;
-    // }
   }
 
   @if ($breakpoint == sm) {
-    // @media (max-width: 500px) {
-    //   @content;
-    // }
     @media (max-width: 670px) {
       @content;
     }
