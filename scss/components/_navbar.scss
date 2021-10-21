@@ -3,6 +3,7 @@
   height: 80px;
   background-color: color(light);
   z-index: 100;
+  position: relative;
 
   .container {
     height: 100%;
@@ -11,6 +12,10 @@
 
   &-items {
     @include flexPosition;
+
+    @include responsive(sm) {
+      display: none;
+    }
   }
 
   &-link {
@@ -91,9 +96,95 @@
   width: 120px;
   height: 100px;
 
-  
   @include responsive(md) {
     width: 100px;
     height: 80px;
   }
+}
+
+// .hamburger-menu {
+//   display: none;
+
+//   @include responsive(sm) {
+//     display: block;
+//     width: 32px;
+//     height: 32px;
+//     background-color: red;
+//     position: absolute;
+//     top: 50%;
+//     right: 12px;
+//     transform: translateY(-50%);
+//     @include flexPosition($justCont: space-around, $alignItem: center);
+//   }
+
+//   .line {
+//     width: 100%;
+//     height: 100%;
+//     height: 0.1rem;
+//     background-color: color(black);
+//   }
+// }
+
+.menu-btn {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  height: 32px;
+  width: 32px;
+  @include flexPosition;
+  z-index: 90;
+
+  span {
+    display: block;
+    height: 0.2rem;
+    width: 100%;
+    border-radius: 3px;
+    background-color: color(black);
+    position: absolute;
+
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      height: 0.2rem;
+      width: 100%;
+      border-radius: 3px;
+      background-color: color(black);
+      position: absolute;
+      transition: transform 0.3s;
+    }
+
+    &::before {
+      bottom: 8px;
+    }
+    &::after {
+      top: 8px;
+    }
+  }
+}
+
+#menu-btn-check {
+  display: none;
+}
+
+#menu-btn-check:checked ~ .menu-btn span {
+  background-color: transparent;
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+
+#menu-btn-check:checked ~ .menu-btn span::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+.menu-content {
+  width: 100%;
+  height: auto;
+  background-color: color(light);
+  @include flexPosition;
+  flex-direction: column;
 }

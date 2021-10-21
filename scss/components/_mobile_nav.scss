@@ -1,0 +1,120 @@
+.menu-btn {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  height: 32px;
+  width: 32px;
+  @include flexPosition;
+  z-index: 90;
+
+  span {
+    display: block;
+    height: 0.2rem;
+    width: 100%;
+    border-radius: 3px;
+    background-color: color(black);
+    position: absolute;
+
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      height: 0.2rem;
+      width: 100%;
+      border-radius: 3px;
+      background-color: color(black);
+      position: absolute;
+      transition: transform 0.3s;
+    }
+
+    &::before {
+      bottom: 8px;
+    }
+    &::after {
+      top: 8px;
+    }
+  }
+}
+
+#menu-btn-check {
+  display: none;
+}
+
+#menu-btn-check:checked ~ .menu-btn span {
+  background-color: transparent;
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+
+#menu-btn-check:checked ~ .menu-btn span::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+#menu-btn-check:checked ~ .menu-content {
+  transform: translateY(0);
+}
+
+.menu-content {
+  width: 100%;
+  height: auto;
+  background-color: color(light);
+  @include flexPosition($justCont: flex-start, $alignItem: center);
+  flex-direction: column;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  padding: 2rem;
+  transform: translateY(-200%); //
+  transition: transform 0.4s;
+
+  .mobile-nav-link {
+    .fas {
+      z-index: 100;
+      font-size: 1.2rem;
+      color: rgba(color(primary), 0.8);
+      color: black;
+      width: 14px;
+      height: 14px;
+      display: inline-block;
+      padding-left: 0.8rem;
+    }
+  }
+
+  .mobile-nav-link,
+  .mobile-dropdown-link {
+    text-decoration: none;
+    color: rgba(color(black), 0.8);
+    font-size: size(sm);
+    text-transform: uppercase;
+    transition: color 0.2s;
+
+    &:hover {
+      color: rgba(color(primary), 0.8);
+    }
+  }
+  .mobile-dropdown-link {
+    font-size: size(xs);
+    transition: color 0.2s;
+
+    &:hover {
+      color: rgba(color(primary), 0.8);
+    }
+  }
+
+  .mobile-dropdown-content {
+    padding: 2rem;
+    font-size: 0.8rem;
+    font-weight: 200;
+    display: none;
+  }
+}
+
+.mobile-dropdown.open .mobile-dropdown-content {
+  display: block;
+  @include flexPosition($justCont: center, $alignItem: flex-start);
+  flex-direction: column;
+}

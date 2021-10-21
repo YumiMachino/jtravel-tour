@@ -20,14 +20,14 @@ modal_close_btns.forEach((close) => {
   });
 });
 
-window.onclick = function (e) {
-  if (e.target.id.includes("pick") || e.target.id.includes("modal-close")) {
-    return;
-  } else {
-    const _Index = Number(e.target.id.split("-")[1]) - 1;
-    modals[_Index].style.display = "none";
-  }
-};
+// window.onclick = function (e) {
+//   if (e.target.id.includes("pick") || e.target.id.includes("modal-close")) {
+//     return;
+//   } else {
+//     const _Index = Number(e.target.id.split("-")[1]) - 1;
+//     modals[_Index].style.display = "none";
+//   }
+// };
 
 // Swiper for interest cards
 var swiper = new Swiper(".mySwiper", {
@@ -45,4 +45,13 @@ var swiper = new Swiper(".mySwiper", {
   pagination: {
     el: ".swiper-pagination",
   },
+});
+
+const m = document.querySelectorAll(".fa-chevron-down");
+console.log(m);
+
+m.forEach((m) => {
+  m.addEventListener("click", (e) => {
+    const ele = e.target.parentElement.classList.toggle("open");
+  });
 });
