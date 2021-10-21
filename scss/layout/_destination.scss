@@ -1,6 +1,6 @@
 .desti-heading {
   width: 100vw;
-  height: 14vw;
+  height: 14vh;
   background: url(../images/destination-heading.jpg) no-repeat center;
   background-size: cover;
 
@@ -15,6 +15,10 @@
     @include responsive(md) {
       font-size: size(lg);
     }
+    @include responsive(xs) {
+      font-size: size(md);
+      text-align: center;
+    }
   }
 }
 
@@ -25,6 +29,9 @@
 
   @include responsive(md) {
     font-size: size(sm);
+  }
+  @include responsive(xs) {
+    font-size: size(xs);
   }
 }
 
@@ -45,6 +52,9 @@
       @include responsive(sm) {
         width: 330px;
       }
+      @include responsive(xs) {
+        max-width: 100%;
+      }
     }
   }
 
@@ -61,6 +71,9 @@
 
   .title-wrapper {
     width: 465px;
+    @include responsive(xs) {
+      max-width: 80%;
+    }
   }
 
   &-wrapper {
@@ -70,6 +83,9 @@
 
     @include responsive(md) {
       height: 22vh;
+    }
+    @include responsive(xs) {
+      height: 30vh;
     }
 
     .arrow {
@@ -132,6 +148,10 @@
         @include flexPosition($justCont: space-around, $alignItem: flex-start);
         flex-direction: column;
         height: 60%;
+
+        @include responsive(xs) {
+          width: 50%;
+        }
       }
 
       .featured-title {
@@ -144,6 +164,9 @@
         }
         @include responsive(md) {
           font-size: size(sm);
+        }
+        @include responsive(xs) {
+          font-size: size(xs);
         }
       }
       .featured-text {

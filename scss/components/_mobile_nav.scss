@@ -74,13 +74,18 @@
   .mobile-nav-link {
     .fas {
       z-index: 100;
-      font-size: 1.2rem;
-      color: rgba(color(primary), 0.8);
+      font-size: 1.4rem;
       color: black;
       width: 14px;
       height: 14px;
       display: inline-block;
-      padding-left: 0.8rem;
+      padding-left: 1rem;
+      // margin-left: 2rem;
+      background-color: yellow;
+
+      &:hover {
+        color: rgba(color(primary), 0.8);
+      }
     }
   }
 
@@ -91,6 +96,7 @@
     font-size: size(sm);
     text-transform: uppercase;
     transition: color 0.2s;
+    padding: 0.4rem 0;
 
     &:hover {
       color: rgba(color(primary), 0.8);
@@ -117,4 +123,12 @@
   display: block;
   @include flexPosition($justCont: center, $alignItem: flex-start);
   flex-direction: column;
+}
+
+.hamburger-menu {
+  display: none;
+
+  @include responsive(md) {
+    display: block;
+  }
 }

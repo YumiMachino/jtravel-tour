@@ -13,6 +13,10 @@
   @include responsive(sm) {
     font-size: size(md);
   }
+  @include responsive(xs) {
+    font-size: size(sm);
+    transform: translateX(0);
+  }
 
   &::before,
   &::after {
@@ -23,6 +27,10 @@
     transform: translateY(-50%);
     background-color: color(primary);
     top: 50%;
+
+    @include responsive(xs) {
+      display: none;
+    }
   }
 
   &::before {

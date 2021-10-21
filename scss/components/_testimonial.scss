@@ -13,6 +13,12 @@
     height: 120px;
   }
 
+  // Responsive
+  @include responsive(xs) {
+    width: 100%;
+    border: none;
+  }
+
   &::after {
     content: "";
     width: 0;
@@ -29,7 +35,7 @@
     @include responsive(lg) {
       right: 10px;
     }
-    @include responsive(sm) {
+    @include responsive(xs) {
       display: none;
     }
   }
@@ -46,6 +52,9 @@
       width: 120px;
       height: 110px;
     }
+    @include responsive(xs) {
+      width: 200px;
+    }
   }
 
   &-icon {
@@ -58,6 +67,11 @@
       top: -10px;
       font-size: size(md);
     }
+    @include responsive(xs) {
+      left: 8px;
+      top: -20px;
+      font-size: size(lg);
+    }
   }
 
   &-text {
@@ -66,6 +80,9 @@
     color: rgba(color(black), 0.8);
     @include responsive(sm) {
       font-size: size(xs) * 0.7;
+    }
+    @include responsive(xs) {
+      font-size: size(xs);
     }
   }
 

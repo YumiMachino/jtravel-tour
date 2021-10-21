@@ -4,9 +4,6 @@
   background-color: rgba(color(secondary), 0.8);
 
   @include responsive(xl) {
-    height: 16rem;
-  }
-  @include responsive(md) {
     height: 18rem;
   }
 
@@ -63,7 +60,7 @@
     color: color(white);
     font-weight: 300;
     letter-spacing: 0.1rem;
-    // min-height: 40px;
+    padding: 0.4rem 0;
   }
 
   .footer-link {

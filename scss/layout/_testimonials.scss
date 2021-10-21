@@ -25,6 +25,7 @@
       @include responsive(lg) {
         right: 25px;
       }
+
       @include responsive(sm) {
         right: 15px;
       }
@@ -84,6 +85,13 @@
 
     &.open {
       transform: translateX(0);
+    }
+
+    @include responsive(xs) {
+      & > div:first-child,
+      & > div:last-child {
+        display: none;
+      }
     }
   }
 }

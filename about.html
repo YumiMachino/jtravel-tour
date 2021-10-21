@@ -23,11 +23,47 @@
   </head>
   <body>
     <!-- Navbar -->
+    <!-- Navbar -->
     <nav class="navbar">
       <div class="container">
         <a href="index.html" class="logo">
           <img src="images/JTRAVEL-logo.png" alt="jtravel logo" />
         </a>
+        <!-- responsive nav-->
+        <div class="hamburger-menu">
+          <input type="checkbox" id="menu-btn-check" />
+          <label for="menu-btn-check" class="menu-btn">
+            <span></span>
+          </label>
+          <div class="menu-content">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <div class="mobile-dropdown">
+              <a href="destination.html" class="mobile-nav-link"
+                >Destination
+              </a>
+              <i class="fas fa-chevron-down"></i>
+              <div class="mobile-dropdown-content">
+                <a href="destination.html" class="mobile-dropdown-link"
+                  >Tour package</a
+                >
+                <a href="destination.html" class="mobile-dropdown-link"
+                  >Featured package</a
+                >
+              </div>
+            </div>
+            <div class="mobile-dropdown">
+              <a href="about.html" class="mobile-nav-link">About Us</a>
+              <i class="fas fa-chevron-down"></i>
+              <div class="mobile-dropdown-content">
+                <a href="about.html" class="mobile-dropdown-link">Team</a>
+                <a href="about.html" class="mobile-dropdown-link">FAQ</a>
+                <a href="about.html" class="mobile-dropdown-link">Contact Us</a>
+              </div>
+            </div>
+            <a href="blog.html" class="mobile-nav-link">Blog</a>
+          </div>
+        </div>
+        <!-- end of responsive nav -->
         <div class="navbar-items">
           <a href="index.html" class="navbar-link">Home</a>
           <div class="dropdown">
@@ -144,7 +180,7 @@
         <div class="title-wrapper">
           <h3 class="section-title">FAQ</h3>
         </div>
-        
+
         <div class="faq-container">
           <div class="faq active">
             <h5 class="faq-page">

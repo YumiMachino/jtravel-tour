@@ -16,11 +16,17 @@
       @include responsive(sm) {
         width: 430px;
       }
+      @include responsive(xs) {
+        max-width: 100%;
+      }
     }
     .section-paragraph {
       width: 650px;
       @include responsive(sm) {
         width: 430px;
+      }
+      @include responsive(xs) {
+        max-width: 100%;
       }
     }
   }

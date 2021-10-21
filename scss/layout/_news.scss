@@ -8,6 +8,9 @@
     @include responsive(sm) {
       width: 400px;
     }
+    @include responsive(xs) {
+      max-width: 100%;
+    }
   }
 
   .container {
@@ -40,6 +43,9 @@
 
     @include responsive(sm) {
       flex-direction: column;
+    }
+    @include responsive(xs) {
+      text-align: center;
     }
 
     & > span {

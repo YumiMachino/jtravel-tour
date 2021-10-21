@@ -4,6 +4,7 @@
   background-color: color(light);
   z-index: 100;
   position: relative;
+  // overflow: hidden; //
 
   .container {
     height: 100%;
@@ -13,7 +14,7 @@
   &-items {
     @include flexPosition;
 
-    @include responsive(sm) {
+    @include responsive(md) {
       display: none;
     }
   }
@@ -100,6 +101,10 @@
     width: 100px;
     height: 80px;
   }
+  @include responsive(xs) {
+    width: 80px;
+    height: 60px;
+  }
 }
 
 // .hamburger-menu {
@@ -124,67 +129,3 @@
 //     background-color: color(black);
 //   }
 // }
-
-.menu-btn {
-  position: absolute;
-  top: 50%;
-  right: 12px;
-  transform: translateY(-50%);
-  height: 32px;
-  width: 32px;
-  @include flexPosition;
-  z-index: 90;
-
-  span {
-    display: block;
-    height: 0.2rem;
-    width: 100%;
-    border-radius: 3px;
-    background-color: color(black);
-    position: absolute;
-
-    &::before,
-    &::after {
-      content: "";
-      display: block;
-      height: 0.2rem;
-      width: 100%;
-      border-radius: 3px;
-      background-color: color(black);
-      position: absolute;
-      transition: transform 0.3s;
-    }
-
-    &::before {
-      bottom: 8px;
-    }
-    &::after {
-      top: 8px;
-    }
-  }
-}
-
-#menu-btn-check {
-  display: none;
-}
-
-#menu-btn-check:checked ~ .menu-btn span {
-  background-color: transparent;
-}
-#menu-btn-check:checked ~ .menu-btn span::before {
-  bottom: 0;
-  transform: rotate(45deg);
-}
-
-#menu-btn-check:checked ~ .menu-btn span::after {
-  top: 0;
-  transform: rotate(-45deg);
-}
-
-.menu-content {
-  width: 100%;
-  height: auto;
-  background-color: color(light);
-  @include flexPosition;
-  flex-direction: column;
-}

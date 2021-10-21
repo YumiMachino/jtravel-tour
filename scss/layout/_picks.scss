@@ -145,6 +145,10 @@ form {
     width: 300px;
     height: 200px;
   }
+  @include responsive(xs) {
+    width: 240px;
+    height: 180px;
+  }
 }
 
 .form-title {

@@ -13,6 +13,10 @@
       font-size: size(lg);
       margin-left: 4rem;
     }
+    @include responsive(xs) {
+      font-size: size(md);
+      margin-left: 2rem;
+    }
   }
   .post-date {
     font-size: size(xs);
@@ -21,6 +25,10 @@
     text-align: left;
     @include responsive(sm) {
       margin-left: 4rem;
+    }
+    @include responsive(xs) {
+      margin-left: 2rem;
+      font-size: size(xs) * 0.8;
     }
   }
   .container {
@@ -32,6 +40,9 @@
 
     @include responsive(md) {
       width: 80%;
+    }
+    @include responsive(xs) {
+      width: 100%;
     }
 
     .img-wrapper {
@@ -61,10 +72,17 @@
     @include responsive(sm) {
       font-size: size(sm);
     }
+    @include responsive(xs) {
+      font-size: size(xs);
+    }
   }
   .post-para {
     font-size: size(xs);
     padding: 2rem 1rem;
+    @include responsive(xs) {
+      font-size: size(xs) * 0.8;
+      padding: 1rem 0.8rem;
+    }
   }
 
   .img-wrapper {
@@ -86,6 +104,9 @@
     height: 16vw;
     padding: 6px;
   }
+  @include responsive(xs) {
+    height: 16vh;
+  }
 
   &-img-wrapper {
     width: 100px;
@@ -99,7 +120,7 @@
       height: 70px;
     }
     @include responsive(sm) {
-      width: 100px;
+      width: 120px;
       height: 60px;
     }
   }
@@ -108,6 +129,10 @@
   }
   &-name {
     font-size: size(xs);
+
+    @include responsive(xs) {
+      font-size: size(xs) * 0.9;
+    }
   }
   &-history {
     font-size: size(xs) * 0.8;
