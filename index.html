@@ -26,672 +26,688 @@
     <title>jtravel tour - make memorable experience</title>
   </head>
   <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-      <div class="container">
-        <a href="index.html" class="logo">
-          <img src="images/JTRAVEL-logo.png" alt="jtravel logo" />
-        </a>
-        <!-- responsive nav-->
-        <div class="hamburger-menu">
-          <input type="checkbox" id="menu-btn-check" />
-          <label for="menu-btn-check" class="menu-btn">
-            <span></span>
-          </label>
-          <div class="menu-content">
-            <a href="index.html" class="mobile-nav-link">Home</a>
-            <div class="mobile-dropdown">
-              <a href="destination.html" class="mobile-nav-link"
-                >Destination
-              </a>
-              <i class="fas fa-chevron-down"></i>
-              <div class="mobile-dropdown-content">
-                <a href="destination.html" class="mobile-dropdown-link"
+    <div class="loader">
+      <div class="tr-1"></div>
+      <div class="tr-2"></div>
+      <h4 class="loading-text">loading...</h4>
+    </div>
+    <div class="main-content">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="container">
+          <a href="index.html" class="logo">
+            <img src="images/JTRAVEL-logo.png" alt="jtravel logo" />
+          </a>
+          <!-- responsive nav-->
+          <div class="hamburger-menu">
+            <input type="checkbox" id="menu-btn-check" />
+            <label for="menu-btn-check" class="menu-btn">
+              <span></span>
+            </label>
+            <div class="menu-content">
+              <a href="index.html" class="mobile-nav-link">Home</a>
+              <div class="mobile-dropdown">
+                <a href="destination.html" class="mobile-nav-link"
+                  >Destination
+                </a>
+                <i class="fas fa-chevron-down"></i>
+                <div class="mobile-dropdown-content">
+                  <a href="destination.html" class="mobile-dropdown-link"
+                    >Tour package</a
+                  >
+                  <a href="destination.html" class="mobile-dropdown-link"
+                    >Featured package</a
+                  >
+                </div>
+              </div>
+              <div class="mobile-dropdown">
+                <a href="about.html" class="mobile-nav-link">About Us</a>
+                <i class="fas fa-chevron-down"></i>
+                <div class="mobile-dropdown-content">
+                  <a href="about.html" class="mobile-dropdown-link">Team</a>
+                  <a href="about.html" class="mobile-dropdown-link">FAQ</a>
+                  <a href="about.html" class="mobile-dropdown-link"
+                    >Contact Us</a
+                  >
+                </div>
+              </div>
+              <a href="blog.html" class="mobile-nav-link">Blog</a>
+            </div>
+          </div>
+          <!-- end of responsive nav -->
+          <div class="navbar-items">
+            <a href="index.html" class="navbar-link active">Home</a>
+            <div class="dropdown">
+              <a href="destination.html" class="dropbtn navbar-link"
+                >Destination</a
+              >
+              <div class="dropdown-content">
+                <a href="destination.html" class="dropdown-link"
                   >Tour package</a
                 >
-                <a href="destination.html" class="mobile-dropdown-link"
+                <a href="destination.html" class="dropdown-link"
                   >Featured package</a
                 >
               </div>
             </div>
-            <div class="mobile-dropdown">
-              <a href="about.html" class="mobile-nav-link">About Us</a>
-              <i class="fas fa-chevron-down"></i>
-              <div class="mobile-dropdown-content">
-                <a href="about.html" class="mobile-dropdown-link">Team</a>
-                <a href="about.html" class="mobile-dropdown-link">FAQ</a>
-                <a href="about.html" class="mobile-dropdown-link">Contact Us</a>
+            <div class="dropdown">
+              <a href="about.html" class="dropbtn navbar-link">About Us</a>
+              <div class="dropdown-content">
+                <a href="about.html" class="dropdown-link">Team</a>
+                <a href="about.html" class="dropdown-link">FAQ</a>
+                <a href="about.html" class="dropdown-link">Contact Us</a>
               </div>
             </div>
-            <a href="blog.html" class="mobile-nav-link">Blog</a>
+            <a href="blog.html" class="navbar-link">Blog</a>
           </div>
         </div>
-        <!-- end of responsive nav -->
-        <div class="navbar-items">
-          <a href="index.html" class="navbar-link active">Home</a>
-          <div class="dropdown">
-            <a href="destination.html" class="dropbtn navbar-link"
-              >Destination</a
-            >
-            <div class="dropdown-content">
-              <a href="destination.html" class="dropdown-link">Tour package</a>
-              <a href="destination.html" class="dropdown-link"
-                >Featured package</a
-              >
-            </div>
-          </div>
-          <div class="dropdown">
-            <a href="about.html" class="dropbtn navbar-link">About Us</a>
-            <div class="dropdown-content">
-              <a href="about.html" class="dropdown-link">Team</a>
-              <a href="about.html" class="dropdown-link">FAQ</a>
-              <a href="about.html" class="dropdown-link">Contact Us</a>
-            </div>
-          </div>
-          <a href="blog.html" class="navbar-link">Blog</a>
+      </nav>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero-bg bg-1"><img src="images/hero-1.jpg" alt="" /></div>
+        <div class="hero-bg bg-2"><img src="images/hero-2.jpg" alt="" /></div>
+        <div class="hero-bg bg-3"><img src="images/hero-3.jpg" alt="" /></div>
+        <div class="hero-heading">
+          <h1 class="hero-heading-main">Discover Japan</h1>
+          <h2 class="hero-heading-sub">Feel the authenticity</h2>
+          <a href="destination.html">
+            <button class="btn primary-btn">Start Now</button>
+          </a>
         </div>
-      </div>
-    </nav>
-    <!-- Hero -->
-    <section class="hero">
-      <div class="hero-bg bg-1"><img src="images/hero-1.jpg" alt="" /></div>
-      <div class="hero-bg bg-2"><img src="images/hero-2.jpg" alt="" /></div>
-      <div class="hero-bg bg-3"><img src="images/hero-3.jpg" alt="" /></div>
-      <div class="hero-heading">
-        <h1 class="hero-heading-main">Discover Japan</h1>
-        <h2 class="hero-heading-sub">Feel the authenticity</h2>
-        <a href="destination.html">
-          <button class="btn primary-btn">Start Now</button>
-        </a>
-      </div>
-    </section>
+      </section>
 
-    <!-- Picks -->
-    <section class="picks">
-      <div class="container">
-        <div class="picks-left">
-          <h3 class="section-title">Our Picks</h3>
+      <!-- Picks -->
+      <section class="picks">
+        <div class="container">
+          <div class="picks-left">
+            <h3 class="section-title">Our Picks</h3>
+            <p class="section-paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
+              consequatur!
+            </p>
+            <div class="pick-card-wrapper">
+              <div class="pick">
+                <img src="images/pick-1.jpg" alt="Fushimi Inari Shrine" />
+                <div class="pick-info">
+                  <h4 class="pick-title">Fushimi Inari Shrine</h4>
+                  <button id="pick-1-btn" class="btn tertiary-btn pick-btn">
+                    Check
+                  </button>
+                </div>
+              </div>
+              <div class="pick">
+                <img src="images/pick-2.jpg" alt="Shibuya, Tokyo" />
+                <div class="pick-info">
+                  <h4 class="pick-title">Shibuya, Tokyo</h4>
+                  <button id="pick-2-btn" class="btn tertiary-btn pick-btn">
+                    Check
+                  </button>
+                </div>
+              </div>
+              <div class="pick">
+                <img src="images/pick-3.jpg" alt="Osaka" />
+                <div class="pick-info">
+                  <h4 class="pick-title">Osaka</h4>
+                  <button id="pick-3-btn" class="btn tertiary-btn pick-btn">
+                    Check
+                  </button>
+                </div>
+              </div>
+              <div class="pick">
+                <img src="images/pick-4.jpg" alt="" />
+                <div class="pick-info">
+                  <h4 class="pick-title">Furano, Hokkaido</h4>
+                  <button id="pick-4-btn" class="btn tertiary-btn pick-btn">
+                    Check
+                  </button>
+                </div>
+              </div>
+              <div class="pick">
+                <img src="images/pick-5.jpg" alt="" />
+                <div class="pick-info">
+                  <h4 class="pick-title">Cuisine</h4>
+                  <button id="pick-5-btn" class="btn tertiary-btn pick-btn">
+                    Check
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="picks-right">
+            <h4 class="form-title">Check availability?</h4>
+            <form>
+              <div class="inputs-group">
+                <label for="date">check in - check out</label>
+                <input
+                  type="date"
+                  class="input-field"
+                  placeholder="mm/dd/yy - mm/dd/yyyy"
+                />
+              </div>
+              <div class="inputs-group">
+                <label for="city">Which city is your main interest?</label>
+                <input
+                  type="text"
+                  class="input-field"
+                  placeholder="e.g) Tokyo"
+                />
+              </div>
+              <input type="submit" value="Check" class="btn secondary-btn" />
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Interests -->
+      <section class="interest">
+        <div class="container">
+          <div class="title-wrapper">
+            <h3 class="section-title">Search by your interest</h3>
+          </div>
           <p class="section-paragraph">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
             consequatur!
           </p>
-          <div class="pick-card-wrapper">
-            <div class="pick">
-              <img src="images/pick-1.jpg" alt="Fushimi Inari Shrine" />
-              <div class="pick-info">
-                <h4 class="pick-title">Fushimi Inari Shrine</h4>
-                <button id="pick-1-btn" class="btn tertiary-btn pick-btn">
-                  Check
-                </button>
-              </div>
-            </div>
-            <div class="pick">
-              <img src="images/pick-2.jpg" alt="Shibuya, Tokyo" />
-              <div class="pick-info">
-                <h4 class="pick-title">Shibuya, Tokyo</h4>
-                <button id="pick-2-btn" class="btn tertiary-btn pick-btn">
-                  Check
-                </button>
-              </div>
-            </div>
-            <div class="pick">
-              <img src="images/pick-3.jpg" alt="Osaka" />
-              <div class="pick-info">
-                <h4 class="pick-title">Osaka</h4>
-                <button id="pick-3-btn" class="btn tertiary-btn pick-btn">
-                  Check
-                </button>
-              </div>
-            </div>
-            <div class="pick">
-              <img src="images/pick-4.jpg" alt="" />
-              <div class="pick-info">
-                <h4 class="pick-title">Furano, Hokkaido</h4>
-                <button id="pick-4-btn" class="btn tertiary-btn pick-btn">
-                  Check
-                </button>
-              </div>
-            </div>
-            <div class="pick">
-              <img src="images/pick-5.jpg" alt="" />
-              <div class="pick-info">
-                <h4 class="pick-title">Cuisine</h4>
-                <button id="pick-5-btn" class="btn tertiary-btn pick-btn">
-                  Check
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="picks-right">
-          <h4 class="form-title">Check availability?</h4>
-          <form>
-            <div class="inputs-group">
-              <label for="date">check in - check out</label>
-              <input
-                type="date"
-                class="input-field"
-                placeholder="mm/dd/yy - mm/dd/yyyy"
-              />
-            </div>
-            <div class="inputs-group">
-              <label for="city">Which city is your main interest?</label>
-              <input type="text" class="input-field" placeholder="e.g) Tokyo" />
-            </div>
-            <input type="submit" value="Check" class="btn secondary-btn" />
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <!-- Interests -->
-    <section class="interest">
-      <div class="container">
-        <div class="title-wrapper">
-          <h3 class="section-title">Search by your interest</h3>
-        </div>
-        <p class="section-paragraph">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
-          consequatur!
-        </p>
-        <div class="swiper mySwiper">
-          <div class="interest-cards swiper-wrapper">
-            <div class="interest-card swiper-slide">
-              <div class="interest-icon">
-                <i class="fas fa-book-open fa-5x"></i>
-              </div>
-              <h5 class="interest-title">Culture</h5>
-              <a href="destination.html">
-                <button class="btn tertiary-btn">Explore</button>
-              </a>
-            </div>
-
-            <div class="interest-card swiper-slide">
-              <div class="interest-icon">
-                <i class="fas fa-city fa-5x"></i>
-              </div>
-              <h5 class="interest-title">City Walk</h5>
-              <a href="destination.html">
-                <button class="btn tertiary-btn">Explore</button>
-              </a>
-            </div>
-
-            <div class="interest-card swiper-slide">
-              <div class="interest-icon">
-                <i class="fas fa-leaf fa-5x"></i>
-              </div>
-              <h5 class="interest-title">Nature</h5>
-              <a href="destination.html">
-                <button class="btn tertiary-btn">Explore</button>
-              </a>
-            </div>
-            <div class="interest-card swiper-slide">
-              <div class="interest-icon">
-                <i class="fas fa-hiking fa-5x"></i>
-              </div>
-              <h5 class="interest-title">Adventure</h5>
-              <a href="destination.html">
-                <button class="btn tertiary-btn">Explore</button>
-              </a>
-            </div>
-            <div class="interest-card swiper-slide">
-              <div class="interest-icon">
-                <i class="fas fa-utensils fa-5x"></i>
-              </div>
-              <h5 class="interest-title">Cuisine</h5>
-              <a href="destination.html">
-                <button class="btn tertiary-btn">Explore</button>
-              </a>
-            </div>
-            <div class="interest-card swiper-slide">
-              <div class="interest-icon">
-                <i class="fas fa-umbrella-beach fa-5x"></i>
-              </div>
-              <h5 class="interest-title">Holiday</h5>
-              <a href="destination.html">
-                <button class="btn tertiary-btn">Explore</button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- testimonial -->
-    <section class="testimonials">
-      <div class="indicators">
-        <span class="left-arrow">
-          <i class="fas fa-chevron-left"></i>
-        </span>
-        <span class="right-arrow">
-          <i class="fas fa-chevron-right"></i>
-        </span>
-        <span class="pg pagination-1 open"></span>
-        <span class="pg pagination-2"></span>
-        <span class="pg pagination-3"></span>
-      </div>
-      <div class="container">
-        <!-- testimonials page 1-->
-        <div class="testimonials-page open">
-          <div class="testimonial">
-            <div class="testimonial-wrapper">
-              <div class="testimonial-icon">
-                <i class="fas fa-quote-left"></i>
-              </div>
-              <p class="testimonial-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-                dolorum odit, voluptates molestias quod dolore!
-              </p>
-            </div>
-
-            <h5 class="testimonial-name">Darlene Romero</h5>
-            <p class="testimonial-rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </p>
-          </div>
-
-          <div class="testimonial">
-            <div class="testimonial-wrapper">
-              <div class="testimonial-icon">
-                <i class="fas fa-quote-left"></i>
-              </div>
-              <p class="testimonial-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-                dolorum odit, voluptates molestias quod dolore!
-              </p>
-            </div>
-            <h5 class="testimonial-name">Gertrude Patterson</h5>
-            <p class="testimonial-rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-            </p>
-          </div>
-          <div class="testimonial">
-            <div class="testimonial-wrapper">
-              <div class="testimonial-icon">
-                <i class="fas fa-quote-left"></i>
-              </div>
-              <p class="testimonial-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-                dolorum odit, voluptates molestias quod dolore!
-              </p>
-            </div>
-            <h5 class="testimonial-name">Wallace Freeman</h5>
-            <p class="testimonial-rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-            </p>
-          </div>
-        </div>
-
-        <!-- testimonial page 2-->
-        <div class="testimonials-page">
-          <div class="testimonial">
-            <div class="testimonial-wrapper">
-              <div class="testimonial-icon">
-                <i class="fas fa-quote-left"></i>
-              </div>
-              <p class="testimonial-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-                dolorum odit, voluptates molestias quod dolore!
-              </p>
-            </div>
-            <h5 class="testimonial-name">Louis Lawrence</h5>
-            <p class="testimonial-rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </p>
-          </div>
-          <div class="testimonial">
-            <div class="testimonial-wrapper">
-              <div class="testimonial-icon">
-                <i class="fas fa-quote-left"></i>
-              </div>
-              <p class="testimonial-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-                dolorum odit, voluptates molestias quod dolore!
-              </p>
-            </div>
-            <h5 class="testimonial-name">Lorraine Phillips</h5>
-            <p class="testimonial-rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-            </p>
-          </div>
-          <div class="testimonial">
-            <div class="testimonial-wrapper">
-              <div class="testimonial-icon">
-                <i class="fas fa-quote-left"></i>
-              </div>
-              <p class="testimonial-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-                dolorum odit, voluptates molestias quod dolore!
-              </p>
-            </div>
-            <h5 class="testimonial-name">Johnni Fox</h5>
-            <p class="testimonial-rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
-            </p>
-          </div>
-        </div>
-
-        <!-- testimonial page 3-->
-        <div class="testimonials-page">
-          <div class="testimonial">
-            <div class="testimonial-wrapper">
-              <div class="testimonial-icon">
-                <i class="fas fa-quote-left"></i>
-              </div>
-              <p class="testimonial-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-                dolorum odit, voluptates molestias quod dolore!
-              </p>
-            </div>
-            <h5 class="testimonial-name">Ritthy Silva</h5>
-            <p class="testimonial-rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-            </p>
-          </div>
-          <div class="testimonial">
-            <div class="testimonial-wrapper">
-              <div class="testimonial-icon">
-                <i class="fas fa-quote-left"></i>
-              </div>
-              <p class="testimonial-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-                dolorum odit, voluptates molestias quod dolore!
-              </p>
-            </div>
-            <h5 class="testimonial-name">Gloria Jimenez</h5>
-            <p class="testimonial-rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
-            </p>
-          </div>
-          <div class="testimonial">
-            <div class="testimonial-wrapper">
-              <div class="testimonial-icon">
-                <i class="fas fa-quote-left"></i>
-              </div>
-              <p class="testimonial-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-                dolorum odit, voluptates molestias quod dolore!
-              </p>
-            </div>
-            <h5 class="testimonial-name">Robert Mitchell</h5>
-            <p class="testimonial-rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- News-->
-    <section class="news">
-      <div class="container">
-        <div class="title-wrapper">
-          <h3 class="section-title">News & Information</h3>
-        </div>
-        <div class="news-wrapper">
-          <div class="news-block">
-            <span class="travel-tag">TRAVEL</span>
-            <span class="date">2021/09/01</span>
-            <p class="news-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
-              officiis.
-            </p>
-          </div>
-          <div class="news-block">
-            <span class="news-tag">NEWS</span>
-            <span class="date">2021/09/01</span>
-            <p class="news-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
-              officiis.
-            </p>
-          </div>
-          <div class="news-block">
-            <span class="travel-tag">TRAVEL</span>
-            <span class="date">2021/09/01</span>
-            <p class="news-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
-              officiis.
-            </p>
-          </div>
-          <div class="news-block">
-            <span class="travel-tag">TRAVEL</span>
-            <span class="date">2021/09/01</span>
-            <p class="news-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
-              officiis.
-            </p>
-          </div>
-          <div class="news-block">
-            <span class="news-tag">NEWS</span>
-            <span class="date">2021/09/01</span>
-            <p class="news-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
-              officiis.
-            </p>
-          </div>
-          <div class="news-block">
-            <span class="news-tag">NEWS</span>
-            <span class="date">2021/09/01</span>
-            <p class="news-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
-              officiis.
-            </p>
-          </div>
-
-          <a href="#" class="news-link"
-            ><i class="fas fa-long-arrow-alt-right"></i> View All</a
-          >
-        </div>
-      </div>
-    </section>
-
-    <div class="footer-links">
-      <div class="footer-links-wrapper">
-        <a class="footer-logo" href="index.html">
-          <img src="images/JTRAVEL-logo.png" alt="jtravel logo" />
-        </a>
-
-        <div class="footer-link-items">
-          <h5 class="footer-link-title">Quick Links</h5>
-          <div class="footer-link-wrapper">
-            <a href="index.html" class="footer-link">HOME</a>
-            <a href="destination.html" class="footer-link">DESTINATION</a>
-            <a href="about.html" class="footer-link">ABOUT US</a>
-            <a href="blog.html" class="footer-link">BLOG</a>
-          </div>
-        </div>
-        <div class="footer-link-items">
-          <h5 class="footer-link-title">Subscribe Us</h5>
-          <div class="footer-link-wrapper">
-            <p class="subscribe-text">Enter email and get promotions now!</p>
-            <form>
-              <div class="input-details">
-                <div class="input-detail">
-                  <input type="email" placeholder="email@example.com" />
+          <div class="swiper mySwiper">
+            <div class="interest-cards swiper-wrapper">
+              <div class="interest-card swiper-slide">
+                <div class="interest-icon">
+                  <i class="fas fa-book-open fa-5x"></i>
                 </div>
-                <div class="input-detail">
-                  <input type="submit" value="Subscribe" />
-                </div>
+                <h5 class="interest-title">Culture</h5>
+                <a href="destination.html">
+                  <button class="btn tertiary-btn">Explore</button>
+                </a>
               </div>
-            </form>
+
+              <div class="interest-card swiper-slide">
+                <div class="interest-icon">
+                  <i class="fas fa-city fa-5x"></i>
+                </div>
+                <h5 class="interest-title">City Walk</h5>
+                <a href="destination.html">
+                  <button class="btn tertiary-btn">Explore</button>
+                </a>
+              </div>
+
+              <div class="interest-card swiper-slide">
+                <div class="interest-icon">
+                  <i class="fas fa-leaf fa-5x"></i>
+                </div>
+                <h5 class="interest-title">Nature</h5>
+                <a href="destination.html">
+                  <button class="btn tertiary-btn">Explore</button>
+                </a>
+              </div>
+              <div class="interest-card swiper-slide">
+                <div class="interest-icon">
+                  <i class="fas fa-hiking fa-5x"></i>
+                </div>
+                <h5 class="interest-title">Adventure</h5>
+                <a href="destination.html">
+                  <button class="btn tertiary-btn">Explore</button>
+                </a>
+              </div>
+              <div class="interest-card swiper-slide">
+                <div class="interest-icon">
+                  <i class="fas fa-utensils fa-5x"></i>
+                </div>
+                <h5 class="interest-title">Cuisine</h5>
+                <a href="destination.html">
+                  <button class="btn tertiary-btn">Explore</button>
+                </a>
+              </div>
+              <div class="interest-card swiper-slide">
+                <div class="interest-icon">
+                  <i class="fas fa-umbrella-beach fa-5x"></i>
+                </div>
+                <h5 class="interest-title">Holiday</h5>
+                <a href="destination.html">
+                  <button class="btn tertiary-btn">Explore</button>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="footer-link-items">
-          <div class="footer-link-title">Contact Us</div>
-          <div class="footer-link-wrapper">
-            <p class="contact-text">1838 Cherry St, New York, USA</p>
-            <p class="contact-text">(555)555-5555</p>
-            <p class="contact-text">jtravel@example.com</p>
+      </section>
+
+      <!-- testimonial -->
+      <section class="testimonials">
+        <div class="indicators">
+          <span class="left-arrow">
+            <i class="fas fa-chevron-left"></i>
+          </span>
+          <span class="right-arrow">
+            <i class="fas fa-chevron-right"></i>
+          </span>
+          <span class="pg pagination-1 open"></span>
+          <span class="pg pagination-2"></span>
+          <span class="pg pagination-3"></span>
+        </div>
+        <div class="container">
+          <!-- testimonials page 1-->
+          <div class="testimonials-page open">
+            <div class="testimonial">
+              <div class="testimonial-wrapper">
+                <div class="testimonial-icon">
+                  <i class="fas fa-quote-left"></i>
+                </div>
+                <p class="testimonial-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                  dolorum odit, voluptates molestias quod dolore!
+                </p>
+              </div>
+
+              <h5 class="testimonial-name">Darlene Romero</h5>
+              <p class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </p>
+            </div>
+
+            <div class="testimonial">
+              <div class="testimonial-wrapper">
+                <div class="testimonial-icon">
+                  <i class="fas fa-quote-left"></i>
+                </div>
+                <p class="testimonial-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                  dolorum odit, voluptates molestias quod dolore!
+                </p>
+              </div>
+              <h5 class="testimonial-name">Gertrude Patterson</h5>
+              <p class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </p>
+            </div>
+            <div class="testimonial">
+              <div class="testimonial-wrapper">
+                <div class="testimonial-icon">
+                  <i class="fas fa-quote-left"></i>
+                </div>
+                <p class="testimonial-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                  dolorum odit, voluptates molestias quod dolore!
+                </p>
+              </div>
+              <h5 class="testimonial-name">Wallace Freeman</h5>
+              <p class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </p>
+            </div>
+          </div>
+
+          <!-- testimonial page 2-->
+          <div class="testimonials-page">
+            <div class="testimonial">
+              <div class="testimonial-wrapper">
+                <div class="testimonial-icon">
+                  <i class="fas fa-quote-left"></i>
+                </div>
+                <p class="testimonial-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                  dolorum odit, voluptates molestias quod dolore!
+                </p>
+              </div>
+              <h5 class="testimonial-name">Louis Lawrence</h5>
+              <p class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </p>
+            </div>
+            <div class="testimonial">
+              <div class="testimonial-wrapper">
+                <div class="testimonial-icon">
+                  <i class="fas fa-quote-left"></i>
+                </div>
+                <p class="testimonial-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                  dolorum odit, voluptates molestias quod dolore!
+                </p>
+              </div>
+              <h5 class="testimonial-name">Lorraine Phillips</h5>
+              <p class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </p>
+            </div>
+            <div class="testimonial">
+              <div class="testimonial-wrapper">
+                <div class="testimonial-icon">
+                  <i class="fas fa-quote-left"></i>
+                </div>
+                <p class="testimonial-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                  dolorum odit, voluptates molestias quod dolore!
+                </p>
+              </div>
+              <h5 class="testimonial-name">Johnni Fox</h5>
+              <p class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </p>
+            </div>
+          </div>
+
+          <!-- testimonial page 3-->
+          <div class="testimonials-page">
+            <div class="testimonial">
+              <div class="testimonial-wrapper">
+                <div class="testimonial-icon">
+                  <i class="fas fa-quote-left"></i>
+                </div>
+                <p class="testimonial-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                  dolorum odit, voluptates molestias quod dolore!
+                </p>
+              </div>
+              <h5 class="testimonial-name">Ritthy Silva</h5>
+              <p class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </p>
+            </div>
+            <div class="testimonial">
+              <div class="testimonial-wrapper">
+                <div class="testimonial-icon">
+                  <i class="fas fa-quote-left"></i>
+                </div>
+                <p class="testimonial-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                  dolorum odit, voluptates molestias quod dolore!
+                </p>
+              </div>
+              <h5 class="testimonial-name">Gloria Jimenez</h5>
+              <p class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </p>
+            </div>
+            <div class="testimonial">
+              <div class="testimonial-wrapper">
+                <div class="testimonial-icon">
+                  <i class="fas fa-quote-left"></i>
+                </div>
+                <p class="testimonial-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                  dolorum odit, voluptates molestias quod dolore!
+                </p>
+              </div>
+              <h5 class="testimonial-name">Robert Mitchell</h5>
+              <p class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </p>
+            </div>
           </div>
         </div>
-        <div class="footer-link-items">
-          <div class="footer-link-title">Follow JTRAVEL</div>
-          <div class="footer-link-wrapper">
-            <span class="fab fa-facebook-square"></span>
-            <span class="fab fa-instagram-square"></span>
-            <span class="fab fa-twitter-square"></span>
+      </section>
+
+      <!-- News-->
+      <section class="news">
+        <div class="container">
+          <div class="title-wrapper">
+            <h3 class="section-title">News & Information</h3>
+          </div>
+          <div class="news-wrapper">
+            <div class="news-block">
+              <span class="travel-tag">TRAVEL</span>
+              <span class="date">2021/09/01</span>
+              <p class="news-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+                officiis.
+              </p>
+            </div>
+            <div class="news-block">
+              <span class="news-tag">NEWS</span>
+              <span class="date">2021/09/01</span>
+              <p class="news-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+                officiis.
+              </p>
+            </div>
+            <div class="news-block">
+              <span class="travel-tag">TRAVEL</span>
+              <span class="date">2021/09/01</span>
+              <p class="news-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+                officiis.
+              </p>
+            </div>
+            <div class="news-block">
+              <span class="travel-tag">TRAVEL</span>
+              <span class="date">2021/09/01</span>
+              <p class="news-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+                officiis.
+              </p>
+            </div>
+            <div class="news-block">
+              <span class="news-tag">NEWS</span>
+              <span class="date">2021/09/01</span>
+              <p class="news-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+                officiis.
+              </p>
+            </div>
+            <div class="news-block">
+              <span class="news-tag">NEWS</span>
+              <span class="date">2021/09/01</span>
+              <p class="news-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+                officiis.
+              </p>
+            </div>
+
+            <a href="#" class="news-link"
+              ><i class="fas fa-long-arrow-alt-right"></i> View All</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <div class="footer-links">
+        <div class="footer-links-wrapper">
+          <a class="footer-logo" href="index.html">
+            <img src="images/JTRAVEL-logo.png" alt="jtravel logo" />
+          </a>
+
+          <div class="footer-link-items">
+            <h5 class="footer-link-title">Quick Links</h5>
+            <div class="footer-link-wrapper">
+              <a href="index.html" class="footer-link">HOME</a>
+              <a href="destination.html" class="footer-link">DESTINATION</a>
+              <a href="about.html" class="footer-link">ABOUT US</a>
+              <a href="blog.html" class="footer-link">BLOG</a>
+            </div>
+          </div>
+          <div class="footer-link-items">
+            <h5 class="footer-link-title">Subscribe Us</h5>
+            <div class="footer-link-wrapper">
+              <p class="subscribe-text">Enter email and get promotions now!</p>
+              <form>
+                <div class="input-details">
+                  <div class="input-detail">
+                    <input type="email" placeholder="email@example.com" />
+                  </div>
+                  <div class="input-detail">
+                    <input type="submit" value="Subscribe" />
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="footer-link-items">
+            <div class="footer-link-title">Contact Us</div>
+            <div class="footer-link-wrapper">
+              <p class="contact-text">1838 Cherry St, New York, USA</p>
+              <p class="contact-text">(555)555-5555</p>
+              <p class="contact-text">jtravel@example.com</p>
+            </div>
+          </div>
+          <div class="footer-link-items">
+            <div class="footer-link-title">Follow JTRAVEL</div>
+            <div class="footer-link-wrapper">
+              <span class="fab fa-facebook-square"></span>
+              <span class="fab fa-instagram-square"></span>
+              <span class="fab fa-twitter-square"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <p class="footer-text">Designed and developed by Yumi Machino.</p>
+      </footer>
+      <!-- Picks modal -->
+      <div id="modal-1" class="modal">
+        <!-- modal content -->
+        <div class="modal-content">
+          <span id="modal-close-1" class="modal-close">&times;</span>
+          <div class="img-wrapper">
+            <img src="images/pick-1.jpg" alt="Fushimi Inari Shrine" />
+          </div>
+          <div class="modal-text">
+            <h4 class="modal-title">Fushimi Inari Shrine</h4>
+            <span class="culture">Culture</span>
+            <p class="modal-location">Kyoto</p>
+            <p class="modal-paragraph">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptas, cum?Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Ad voluptas mollitia laboriosam quisquam officia veniam
+              quod, repudiandae voluptatum soluta reiciendis.
+            </p>
+            <a href="tour_detail.html">
+              <button class="btn primary-btn">Check detail</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="modal-2" class="modal">
+        <!-- modal content -->
+        <div class="modal-content">
+          <span id="modal-close-2" class="modal-close">&times;</span>
+          <div class="img-wrapper">
+            <img src="images/pick-2.jpg" alt="Shibuya, Tokyo" />
+          </div>
+          <div class="modal-text">
+            <h4 class="modal-title">Shibuya, Tokyo</h4>
+            <span class="experience">Experience</span>
+            <p class="modal-location">Tokyo</p>
+            <p class="modal-paragraph">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptas, cum?Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Ad voluptas mollitia laboriosam quisquam officia veniam
+              quod, repudiandae voluptatum soluta reiciendis.
+            </p>
+            <a href="tour_detail.html">
+              <button class="btn primary-btn">Check detail</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="modal-3" class="modal">
+        <!-- modal content -->
+        <div class="modal-content">
+          <span id="modal-close-3" class="modal-close">&times;</span>
+          <div class="img-wrapper">
+            <img src="images/pick-3.jpg" alt="Osaka" />
+          </div>
+          <div class="modal-text">
+            <h4 class="modal-title">Osaka</h4>
+            <span class="food">Food</span>
+            <p class="modal-location">Osaka</p>
+            <p class="modal-paragraph">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptas, cum?Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Ad voluptas mollitia laboriosam quisquam officia veniam
+              quod, repudiandae voluptatum soluta reiciendis.
+            </p>
+            <a href="tour_detail.html">
+              <button class="btn primary-btn">Check detail</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="modal-4" class="modal">
+        <!-- modal content -->
+        <div class="modal-content">
+          <span id="modal-close-4" class="modal-close">&times;</span>
+          <div class="img-wrapper">
+            <img src="images/pick-4.jpg" alt="Furano, Hokkaido" />
+          </div>
+          <div class="modal-text">
+            <h4 class="modal-title">Furano, Hokkaido</h4>
+            <span class="nature">Nature</span>
+            <p class="modal-location">Hokkaido</p>
+            <p class="modal-paragraph">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptas, cum?Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Ad voluptas mollitia laboriosam quisquam officia veniam
+              quod, repudiandae voluptatum soluta reiciendis.
+            </p>
+            <a href="tour_detail.html">
+              <button class="btn primary-btn">Check detail</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="modal-5" class="modal">
+        <!-- modal content -->
+        <div class="modal-content">
+          <span id="modal-close-5" class="modal-close">&times;</span>
+          <div class="img-wrapper">
+            <img src="images/pick-5.jpg" alt="Pouring matcha on icecream" />
+          </div>
+          <div class="modal-text">
+            <h4 class="modal-title">Cuisine</h4>
+            <span class="food">Culture</span>
+            <p class="modal-location">Kyoto</p>
+            <p class="modal-paragraph">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptas, cum?Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Ad voluptas mollitia laboriosam quisquam officia veniam
+              quod, repudiandae voluptatum soluta reiciendis.
+            </p>
+            <a href="tour_detail.html">
+              <button class="btn primary-btn">Check detail</button>
+            </a>
           </div>
         </div>
       </div>
     </div>
-    <footer class="footer">
-      <p class="footer-text">Designed and developed by Yumi Machino.</p>
-    </footer>
-    <!-- Picks modal -->
-    <div id="modal-1" class="modal">
-      <!-- modal content -->
-      <div class="modal-content">
-        <span id="modal-close-1" class="modal-close">&times;</span>
-        <div class="img-wrapper">
-          <img src="images/pick-1.jpg" alt="Fushimi Inari Shrine" />
-        </div>
-        <div class="modal-text">
-          <h4 class="modal-title">Fushimi Inari Shrine</h4>
-          <span class="culture">Culture</span>
-          <p class="modal-location">Kyoto</p>
-          <p class="modal-paragraph">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
-            cum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-            voluptas mollitia laboriosam quisquam officia veniam quod,
-            repudiandae voluptatum soluta reiciendis.
-          </p>
-          <a href="tour_detail.html">
-            <button class="btn primary-btn">Check detail</button>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div id="modal-2" class="modal">
-      <!-- modal content -->
-      <div class="modal-content">
-        <span id="modal-close-2" class="modal-close">&times;</span>
-        <div class="img-wrapper">
-          <img src="images/pick-2.jpg" alt="Shibuya, Tokyo" />
-        </div>
-        <div class="modal-text">
-          <h4 class="modal-title">Shibuya, Tokyo</h4>
-          <span class="experience">Experience</span>
-          <p class="modal-location">Tokyo</p>
-          <p class="modal-paragraph">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
-            cum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-            voluptas mollitia laboriosam quisquam officia veniam quod,
-            repudiandae voluptatum soluta reiciendis.
-          </p>
-          <a href="tour_detail.html">
-            <button class="btn primary-btn">Check detail</button>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div id="modal-3" class="modal">
-      <!-- modal content -->
-      <div class="modal-content">
-        <span id="modal-close-3" class="modal-close">&times;</span>
-        <div class="img-wrapper">
-          <img src="images/pick-3.jpg" alt="Osaka" />
-        </div>
-        <div class="modal-text">
-          <h4 class="modal-title">Osaka</h4>
-          <span class="food">Food</span>
-          <p class="modal-location">Osaka</p>
-          <p class="modal-paragraph">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
-            cum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-            voluptas mollitia laboriosam quisquam officia veniam quod,
-            repudiandae voluptatum soluta reiciendis.
-          </p>
-          <a href="tour_detail.html">
-            <button class="btn primary-btn">Check detail</button>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div id="modal-4" class="modal">
-      <!-- modal content -->
-      <div class="modal-content">
-        <span id="modal-close-4" class="modal-close">&times;</span>
-        <div class="img-wrapper">
-          <img src="images/pick-4.jpg" alt="Furano, Hokkaido" />
-        </div>
-        <div class="modal-text">
-          <h4 class="modal-title">Furano, Hokkaido</h4>
-          <span class="nature">Nature</span>
-          <p class="modal-location">Hokkaido</p>
-          <p class="modal-paragraph">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
-            cum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-            voluptas mollitia laboriosam quisquam officia veniam quod,
-            repudiandae voluptatum soluta reiciendis.
-          </p>
-          <a href="tour_detail.html">
-            <button class="btn primary-btn">Check detail</button>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div id="modal-5" class="modal">
-      <!-- modal content -->
-      <div class="modal-content">
-        <span id="modal-close-5" class="modal-close">&times;</span>
-        <div class="img-wrapper">
-          <img src="images/pick-5.jpg" alt="Pouring matcha on icecream" />
-        </div>
-        <div class="modal-text">
-          <h4 class="modal-title">Cuisine</h4>
-          <span class="food">Culture</span>
-          <p class="modal-location">Kyoto</p>
-          <p class="modal-paragraph">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
-            cum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-            voluptas mollitia laboriosam quisquam officia veniam quod,
-            repudiandae voluptatum soluta reiciendis.
-          </p>
-          <a href="tour_detail.html">
-            <button class="btn primary-btn">Check detail</button>
-          </a>
-        </div>
-      </div>
-    </div>
+    <script src="js/loader.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/testimonial.js"></script>
-        <script src="js/mobile.js"></script>
+    <script src="js/mobile.js"></script>
   </body>
 </html>

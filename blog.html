@@ -22,293 +22,304 @@
     <title>jtravel tour - Blog</title>
   </head>
   <body>
+    <div class="loader">
+      <div class="loader-inner ball-clip-rotate">
+        <div></div>
+      </div>
+    </div>
     <!-- Navbar -->
-    <nav class="navbar">
-      <div class="container">
-        <a href="index.html" class="logo">
-          <img src="images/JTRAVEL-logo.png" alt="jtravel logo" />
-        </a>
-        <!-- responsive nav-->
-        <div class="hamburger-menu">
-          <input type="checkbox" id="menu-btn-check" />
-          <label for="menu-btn-check" class="menu-btn">
-            <span></span>
-          </label>
-          <div class="menu-content">
-            <a href="index.html" class="mobile-nav-link">Home</a>
-            <div class="mobile-dropdown">
-              <a href="destination.html" class="mobile-nav-link"
-                >Destination
-              </a>
-              <i class="fas fa-chevron-down"></i>
-              <div class="mobile-dropdown-content">
-                <a href="destination.html" class="mobile-dropdown-link"
+    <div class="main-content" style="display: none">
+      <nav class="navbar">
+        <div class="container">
+          <a href="index.html" class="logo">
+            <img src="images/JTRAVEL-logo.png" alt="jtravel logo" />
+          </a>
+          <!-- responsive nav-->
+          <div class="hamburger-menu">
+            <input type="checkbox" id="menu-btn-check" />
+            <label for="menu-btn-check" class="menu-btn">
+              <span></span>
+            </label>
+            <div class="menu-content">
+              <a href="index.html" class="mobile-nav-link">Home</a>
+              <div class="mobile-dropdown">
+                <a href="destination.html" class="mobile-nav-link"
+                  >Destination
+                </a>
+                <i class="fas fa-chevron-down"></i>
+                <div class="mobile-dropdown-content">
+                  <a href="destination.html" class="mobile-dropdown-link"
+                    >Tour package</a
+                  >
+                  <a href="destination.html" class="mobile-dropdown-link"
+                    >Featured package</a
+                  >
+                </div>
+              </div>
+              <div class="mobile-dropdown">
+                <a href="about.html" class="mobile-nav-link">About Us</a>
+                <i class="fas fa-chevron-down"></i>
+                <div class="mobile-dropdown-content">
+                  <a href="about.html" class="mobile-dropdown-link">Team</a>
+                  <a href="about.html" class="mobile-dropdown-link">FAQ</a>
+                  <a href="about.html" class="mobile-dropdown-link"
+                    >Contact Us</a
+                  >
+                </div>
+              </div>
+              <a href="blog.html" class="mobile-nav-link">Blog</a>
+            </div>
+          </div>
+          <!-- end of responsive nav -->
+          <div class="navbar-items">
+            <a href="index.html" class="navbar-link">Home</a>
+            <div class="dropdown">
+              <a href="destination.html" class="dropbtn navbar-link"
+                >Destination</a
+              >
+              <div class="dropdown-content">
+                <a href="destination.html" class="dropdown-link"
                   >Tour package</a
                 >
-                <a href="destination.html" class="mobile-dropdown-link"
+                <a href="destination.html" class="dropdown-link"
                   >Featured package</a
                 >
               </div>
             </div>
-            <div class="mobile-dropdown">
-              <a href="about.html" class="mobile-nav-link">About Us</a>
-              <i class="fas fa-chevron-down"></i>
-              <div class="mobile-dropdown-content">
-                <a href="about.html" class="mobile-dropdown-link">Team</a>
-                <a href="about.html" class="mobile-dropdown-link">FAQ</a>
-                <a href="about.html" class="mobile-dropdown-link">Contact Us</a>
+            <div class="dropdown">
+              <a href="about.html" class="dropbtn navbar-link">About Us</a>
+              <div class="dropdown-content">
+                <a href="about.html" class="dropdown-link">Team</a>
+                <a href="about.html" class="dropdown-link">FAQ</a>
+                <a href="about.html" class="dropdown-link">Contact Us</a>
               </div>
             </div>
-            <a href="blog.html" class="mobile-nav-link">Blog</a>
+            <a href="blog.html" class="navbar-link active">Blog</a>
           </div>
         </div>
-        <!-- end of responsive nav -->
-        <div class="navbar-items">
-          <a href="index.html" class="navbar-link">Home</a>
-          <div class="dropdown">
-            <a href="destination.html" class="dropbtn navbar-link"
-              >Destination</a
-            >
-            <div class="dropdown-content">
-              <a href="destination.html" class="dropdown-link">Tour package</a>
-              <a href="destination.html" class="dropdown-link"
-                >Featured package</a
-              >
-            </div>
+      </nav>
+      <!-- heading -->
+      <main class="blog-main">
+        <div class="container">
+          <div class="title-wrapper">
+            <h3 class="section-title">JTRAVEL Blog</h3>
           </div>
-          <div class="dropdown">
-            <a href="about.html" class="dropbtn navbar-link">About Us</a>
-            <div class="dropdown-content">
-              <a href="about.html" class="dropdown-link">Team</a>
-              <a href="about.html" class="dropdown-link">FAQ</a>
-              <a href="about.html" class="dropdown-link">Contact Us</a>
-            </div>
-          </div>
-          <a href="blog.html" class="navbar-link active">Blog</a>
-        </div>
-      </div>
-    </nav>
-    <!-- heading -->
-    <main class="blog-main">
-      <div class="container">
-        <div class="title-wrapper">
-          <h3 class="section-title">JTRAVEL Blog</h3>
-        </div>
-        <section class="blog">
-          <div class="latest">
-            <div class="img-wrapper">
-              <img src="images/blog-heading.jpg" alt="" />
-            </div>
-            <h5 class="latest-title">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
-              earum!
-            </h5>
-            <a href="post.html">
-              <button class="btn tertiary-btn">Read More</button>
-            </a>
-          </div>
-          <div class="posts">
-            <div class="post">
+          <section class="blog">
+            <div class="latest">
               <div class="img-wrapper">
-                <img
-                  src="https://source.unsplash.com/300x280/?nature,water,japan"
-                  alt=""
-                />
+                <img src="images/blog-heading.jpg" alt="" />
               </div>
-              <h5 class="post-title">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              <h5 class="latest-title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
+                earum!
               </h5>
-              <p class="post-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
-                deserunt!
-              </p>
               <a href="post.html">
                 <button class="btn tertiary-btn">Read More</button>
               </a>
             </div>
-            <div class="post">
-              <div class="img-wrapper">
-                <img
-                  src="https://source.unsplash.com/300x280/?shrine,japan"
-                  alt=""
-                />
-              </div>
-              <h5 class="post-title">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              </h5>
-              <p class="post-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
-                deserunt!
-              </p>
-              <a href="post.html">
-                <button class="btn tertiary-btn">Read More</button>
-              </a>
-            </div>
-            <div class="post">
-              <div class="img-wrapper">
-                <img
-                  src="https://source.unsplash.com/300x280/?food,japan"
-                  alt=""
-                />
-              </div>
-              <h5 class="post-title">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              </h5>
-              <p class="post-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
-                deserunt!
-              </p>
-              <a href="post.html">
-                <button class="btn tertiary-btn">Read More</button>
-              </a>
-            </div>
-            <div class="post">
-              <div class="img-wrapper">
-                <img
-                  src="https://source.unsplash.com/300x280/?spring,japan"
-                  alt=""
-                />
-              </div>
-              <h5 class="post-title">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              </h5>
-              <p class="post-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
-                deserunt!
-              </p>
-              <a href="post.html">
-                <button class="btn tertiary-btn">Read More</button>
-              </a>
-            </div>
-            <div class="post">
-              <div class="img-wrapper">
-                <img
-                  src="https://source.unsplash.com/300x280/?beach,japan"
-                  alt=""
-                />
-              </div>
-              <h5 class="post-title">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              </h5>
-              <p class="post-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
-                deserunt!
-              </p>
-              <a href="post.html">
-                <button class="btn tertiary-btn">Read More</button>
-              </a>
-            </div>
-            <div class="post">
-              <div class="img-wrapper">
-                <img
-                  src="https://source.unsplash.com/300x280/?lake,japan"
-                  alt=""
-                />
-              </div>
-              <h5 class="post-title">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              </h5>
-              <p class="post-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
-                deserunt!
-              </p>
-              <a href="post.html">
-                <button class="btn tertiary-btn">Read More</button>
-              </a>
-            </div>
-            <div class="post">
-              <div class="img-wrapper">
-                <img
-                  src="https://source.unsplash.com/300x280/?city,japan"
-                  alt=""
-                />
-              </div>
-              <h5 class="post-title">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              </h5>
-              <p class="post-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
-                deserunt!
-              </p>
-              <a href="post.html">
-                <button class="btn tertiary-btn">Read More</button>
-              </a>
-            </div>
-            <div class="post">
-              <div class="img-wrapper">
-                <img
-                  src="https://source.unsplash.com/300x280/?snow,japan"
-                  alt=""
-                />
-              </div>
-              <h5 class="post-title">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              </h5>
-              <p class="post-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
-                deserunt!
-              </p>
-              <a href="post.html">
-                <button class="btn tertiary-btn">Read More</button>
-              </a>
-            </div>
-          </div>
-        </section>
-      </div>
-    </main>
-
-    <div class="footer-links">
-      <div class="footer-links-wrapper">
-        <a class="footer-logo" href="index.html">
-          <img src="images/JTRAVEL-logo.png" alt="jtravel logo" />
-        </a>
-
-        <div class="footer-link-items">
-          <h5 class="footer-link-title">Quick Links</h5>
-          <div class="footer-link-wrapper">
-            <a href="index.html" class="footer-link">HOME</a>
-            <a href="destination.html" class="footer-link">DESTINATION</a>
-            <a href="about.html" class="footer-link">ABOUT US</a>
-            <a href="blog.html" class="footer-link">BLOG</a>
-          </div>
-        </div>
-        <div class="footer-link-items">
-          <h5 class="footer-link-title">Subscribe Us</h5>
-          <div class="footer-link-wrapper">
-            <p class="subscribe-text">Enter email and get promotions now!</p>
-            <form>
-              <div class="input-details">
-                <div class="input-detail">
-                  <input type="email" placeholder="email@example.com" />
+            <div class="posts">
+              <div class="post">
+                <div class="img-wrapper">
+                  <img
+                    src="https://source.unsplash.com/300x280/?nature,water,japan"
+                    alt=""
+                  />
                 </div>
-                <div class="input-detail">
-                  <input type="submit" value="Subscribe" />
-                </div>
+                <h5 class="post-title">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </h5>
+                <p class="post-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Alias, deserunt!
+                </p>
+                <a href="post.html">
+                  <button class="btn tertiary-btn">Read More</button>
+                </a>
               </div>
-            </form>
-          </div>
+              <div class="post">
+                <div class="img-wrapper">
+                  <img
+                    src="https://source.unsplash.com/300x280/?shrine,japan"
+                    alt=""
+                  />
+                </div>
+                <h5 class="post-title">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </h5>
+                <p class="post-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Alias, deserunt!
+                </p>
+                <a href="post.html">
+                  <button class="btn tertiary-btn">Read More</button>
+                </a>
+              </div>
+              <div class="post">
+                <div class="img-wrapper">
+                  <img
+                    src="https://source.unsplash.com/300x280/?food,japan"
+                    alt=""
+                  />
+                </div>
+                <h5 class="post-title">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </h5>
+                <p class="post-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Alias, deserunt!
+                </p>
+                <a href="post.html">
+                  <button class="btn tertiary-btn">Read More</button>
+                </a>
+              </div>
+              <div class="post">
+                <div class="img-wrapper">
+                  <img
+                    src="https://source.unsplash.com/300x280/?spring,japan"
+                    alt=""
+                  />
+                </div>
+                <h5 class="post-title">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </h5>
+                <p class="post-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Alias, deserunt!
+                </p>
+                <a href="post.html">
+                  <button class="btn tertiary-btn">Read More</button>
+                </a>
+              </div>
+              <div class="post">
+                <div class="img-wrapper">
+                  <img
+                    src="https://source.unsplash.com/300x280/?beach,japan"
+                    alt=""
+                  />
+                </div>
+                <h5 class="post-title">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </h5>
+                <p class="post-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Alias, deserunt!
+                </p>
+                <a href="post.html">
+                  <button class="btn tertiary-btn">Read More</button>
+                </a>
+              </div>
+              <div class="post">
+                <div class="img-wrapper">
+                  <img
+                    src="https://source.unsplash.com/300x280/?lake,japan"
+                    alt=""
+                  />
+                </div>
+                <h5 class="post-title">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </h5>
+                <p class="post-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Alias, deserunt!
+                </p>
+                <a href="post.html">
+                  <button class="btn tertiary-btn">Read More</button>
+                </a>
+              </div>
+              <div class="post">
+                <div class="img-wrapper">
+                  <img
+                    src="https://source.unsplash.com/300x280/?city,japan"
+                    alt=""
+                  />
+                </div>
+                <h5 class="post-title">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </h5>
+                <p class="post-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Alias, deserunt!
+                </p>
+                <a href="post.html">
+                  <button class="btn tertiary-btn">Read More</button>
+                </a>
+              </div>
+              <div class="post">
+                <div class="img-wrapper">
+                  <img
+                    src="https://source.unsplash.com/300x280/?snow,japan"
+                    alt=""
+                  />
+                </div>
+                <h5 class="post-title">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </h5>
+                <p class="post-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Alias, deserunt!
+                </p>
+                <a href="post.html">
+                  <button class="btn tertiary-btn">Read More</button>
+                </a>
+              </div>
+            </div>
+          </section>
         </div>
-        <div class="footer-link-items">
-          <div class="footer-link-title">Contact Us</div>
-          <div class="footer-link-wrapper">
-            <p class="contact-text">1838 Cherry St, New York, USA</p>
-            <p class="contact-text">(555)555-5555</p>
-            <p class="contact-text">jtravel@example.com</p>
+      </main>
+
+      <div class="footer-links">
+        <div class="footer-links-wrapper">
+          <a class="footer-logo" href="index.html">
+            <img src="images/JTRAVEL-logo.png" alt="jtravel logo" />
+          </a>
+
+          <div class="footer-link-items">
+            <h5 class="footer-link-title">Quick Links</h5>
+            <div class="footer-link-wrapper">
+              <a href="index.html" class="footer-link">HOME</a>
+              <a href="destination.html" class="footer-link">DESTINATION</a>
+              <a href="about.html" class="footer-link">ABOUT US</a>
+              <a href="blog.html" class="footer-link">BLOG</a>
+            </div>
           </div>
-        </div>
-        <div class="footer-link-items">
-          <div class="footer-link-title">Follow JTRAVEL</div>
-          <div class="footer-link-wrapper">
-            <span class="fab fa-facebook-square"></span>
-            <span class="fab fa-instagram-square"></span>
-            <span class="fab fa-twitter-square"></span>
+          <div class="footer-link-items">
+            <h5 class="footer-link-title">Subscribe Us</h5>
+            <div class="footer-link-wrapper">
+              <p class="subscribe-text">Enter email and get promotions now!</p>
+              <form>
+                <div class="input-details">
+                  <div class="input-detail">
+                    <input type="email" placeholder="email@example.com" />
+                  </div>
+                  <div class="input-detail">
+                    <input type="submit" value="Subscribe" />
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="footer-link-items">
+            <div class="footer-link-title">Contact Us</div>
+            <div class="footer-link-wrapper">
+              <p class="contact-text">1838 Cherry St, New York, USA</p>
+              <p class="contact-text">(555)555-5555</p>
+              <p class="contact-text">jtravel@example.com</p>
+            </div>
+          </div>
+          <div class="footer-link-items">
+            <div class="footer-link-title">Follow JTRAVEL</div>
+            <div class="footer-link-wrapper">
+              <span class="fab fa-facebook-square"></span>
+              <span class="fab fa-instagram-square"></span>
+              <span class="fab fa-twitter-square"></span>
+            </div>
           </div>
         </div>
       </div>
+      <footer class="footer">
+        <p class="footer-text">Designed and developed by Yumi Machino.</p>
+      </footer>
     </div>
-    <footer class="footer">
-      <p class="footer-text">Designed and developed by Yumi Machino.</p>
-    </footer>
-        <script src="js/mobile.js"></script>
+    <script src="js/mobile.js"></script>
   </body>
 </html>

@@ -1,9 +1,7 @@
-const m = document.querySelectorAll(".fa-chevron-down");
-console.log(m);
+const dropDownBtns = document.querySelectorAll(".fa-chevron-down");
 
-m.forEach((m) => {
-  m.addEventListener("click", (e) => {
-    console.log("clicked");
+dropDownBtns.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
     const ele = e.target.parentElement.classList.toggle("open");
   });
 });
