@@ -217,9 +217,11 @@ Contact section
 
 .contact {
   width: 100%;
-  height: 30vw;
+  height: 40vw;
   @include flexPosition;
   flex-direction: column;
+  padding: 10px 0;
+  margin: 1rem 0;
 
   @include responsive(xl) {
     height: 60vh;
@@ -233,6 +235,7 @@ Contact section
   form {
     width: 600px;
     height: 500px;
+    height: 80%;
     @include flexPosition($justCont: space-around, $alignItem: center);
     flex-direction: column;
     background-color: rgba(color(primary), 0.7);
