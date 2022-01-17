@@ -1,6 +1,6 @@
 .footer-links {
   width: 100%;
-  height: 12vw;
+  height: 20rem;
   background-color: rgba(color(secondary), 0.8);
 
   @include responsive(xl) {
@@ -68,10 +68,10 @@
     color: color(white);
     cursor: pointer;
     position: relative;
-    padding: 0.8rem 0;
     transition: color 0.2s;
     font-size: size(xs) * 0.8;
     font-weight: 300;
+    padding: 0.4rem 0;
 
     &:hover {
       color: rgba(color(primary), 0.8);
@@ -121,7 +121,7 @@
     }
   }
 
-  input[type="email"] {
+  input[type='email'] {
     width: 100%;
     padding: 0.4rem;
     border-radius: 0.3rem;
@@ -135,7 +135,7 @@
   input::placeholder {
     font-family: inherit;
   }
-  input[type="submit"] {
+  input[type='submit'] {
     padding: 0.4rem;
     border-radius: 0.3rem;
     font-family: inherit;
